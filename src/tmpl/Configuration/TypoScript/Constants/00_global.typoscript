@@ -24,3 +24,8 @@ config {
     rootPageId = 1
 
 }
+view {
+        templateRootPath = EXT:tmpl/Resources/Private/Content/Templates/
+        partialRootPath = EXT:tmpl/Resources/Private/Content/Partials/
+        layoutRootPaths = EXT:tmpl/Resources/Private/Content/Layouts/
+}

@@ -23,7 +23,7 @@ styles {
     templates {
         templateRootPath = EXT:tmpl/Resources/Private/Content/Templates/
         partialRootPath = EXT:tmpl/Resources/Private/Content/Partials/
-        layoutRootPath = EXT:tmpl/Resources/Private/Content/Layouts/
+        layoutRootPaths = EXT:tmpl/Resources/Private/Content/Layouts/
     }
 
 }

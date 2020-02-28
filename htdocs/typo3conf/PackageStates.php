@@ -11,6 +11,9 @@ return [
         'core' => [
             'packagePath' => 'typo3/sysext/core/',
         ],
+        'scheduler' => [
+            'packagePath' => 'typo3/sysext/scheduler/',
+        ],
         'extbase' => [
             'packagePath' => 'typo3/sysext/extbase/',
         ],
@@ -35,11 +38,20 @@ return [
         'install' => [
             'packagePath' => 'typo3/sysext/install/',
         ],
+        'info' => [
+            'packagePath' => 'typo3/sysext/info/',
+        ],
+        'linkvalidator' => [
+            'packagePath' => 'typo3/sysext/linkvalidator/',
+        ],
         'recordlist' => [
             'packagePath' => 'typo3/sysext/recordlist/',
         ],
         'backend' => [
             'packagePath' => 'typo3/sysext/backend/',
+        ],
+        'reports' => [
+            'packagePath' => 'typo3/sysext/reports/',
         ],
         'setup' => [
             'packagePath' => 'typo3/sysext/setup/',
@@ -65,17 +77,11 @@ return [
         'felogin' => [
             'packagePath' => 'typo3/sysext/felogin/',
         ],
-        'info' => [
-            'packagePath' => 'typo3/sysext/info/',
-        ],
         'lowlevel' => [
             'packagePath' => 'typo3/sysext/lowlevel/',
         ],
         'redirects' => [
             'packagePath' => 'typo3/sysext/redirects/',
-        ],
-        'reports' => [
-            'packagePath' => 'typo3/sysext/reports/',
         ],
         'seo' => [
             'packagePath' => 'typo3/sysext/seo/',
@@ -92,8 +98,35 @@ return [
         'viewpage' => [
             'packagePath' => 'typo3/sysext/viewpage/',
         ],
+        'gridelements' => [
+            'packagePath' => 'typo3conf/ext/gridelements/',
+        ],
+        'bootstrap_grids' => [
+            'packagePath' => 'typo3conf/ext/bootstrap_grids/',
+        ],
+        'rte_ckeditor_image' => [
+            'packagePath' => 'typo3conf/ext/rte_ckeditor_image/',
+        ],
+        'extension_builder' => [
+            'packagePath' => 'typo3conf/ext/extension_builder/',
+        ],
+        'fancybox' => [
+            'packagePath' => 'typo3conf/ext/fancybox/',
+        ],
+        'jumpurl' => [
+            'packagePath' => 'typo3conf/ext/jumpurl/',
+        ],
+        'lfeditor' => [
+            'packagePath' => 'typo3conf/ext/lfeditor/',
+        ],
+        'staticfilecache' => [
+            'packagePath' => 'typo3conf/ext/staticfilecache/',
+        ],
         'tmpl' => [
             'packagePath' => 'typo3conf/ext/tmpl/',
+        ],
+        'vhs' => [
+            'packagePath' => 'typo3conf/ext/vhs/',
         ],
     ],
     'version' => 5,
