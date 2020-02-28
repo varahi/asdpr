@@ -6,13 +6,37 @@ mod.web_layout.BackendLayouts {
         config {
             backend_layout {
                 colCount = 1
-                rowCount = 1
+                rowCount = 4
                 rows {
                     1 {
                         columns {
                             1 {
-                                name = Content
+                                name = Content_1
                                 colPos = 1
+                            }
+                        }
+                    }
+                    2 {
+                        columns {
+                            1 {
+                                name = Content_2
+                                colPos = 2
+                            }
+                        }
+                    }
+                    3 {
+                        columns {
+                            1 {
+                                name = Content_3
+                                colPos = 3
+                            }
+                        }
+                    }
+                    4 {
+                        columns {
+                            1 {
+                                name = Content_4
+                                colPos = 4
                             }
                         }
                     }

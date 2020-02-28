@@ -1,17 +1,38 @@
-<div id="bg"></div>
-<footer class="footer">
-	<div class="container">
-		<div class="row">
-			<div class="col-xs-12 col-sm-12 col-md-4 footer__left">
-				<p><f:cObject typoscriptObjectPath="lib.navigation.mapLink" /></p>
-				<h3><f:cObject typoscriptObjectPath="lib.footerPhone" /></h3>
+<footer id="colophon" class="site-footer" role="contentinfo">
+	<div class="wrap">
+
+
+		<aside class="widget-area" role="complementary" aria-label="Pied de page">
+			<div class="widget-column footer-widget-1">
+				<section id="text-4" class="widget widget_text">
+					<div class="textwidget"></div>
+				</section>
 			</div>
-			<div class="col-xs-12 col-sm-12 col-md-8 logo footer__right">
-				<f:cObject typoscriptObjectPath="lib.navigation.footermenu" />
-				<f:cObject typoscriptObjectPath="lib.footerCopyright" />
-				<f:cObject typoscriptObjectPath="lib.developerInfo" />
+			<div class="widget-column footer-widget-2">
+				<section id="text-5" class="widget widget_text"><h2 class="widget-title">A PROPOS DE CE
+					SITE</h2>
+					<div class="textwidget">Copyright 2017</div>
+				</section>
 			</div>
-		</div>
-	</div>
-</footer>
-<f:cObject typoscriptObjectPath="lib.mMenu" />
+		</aside><!-- .widget-area -->
+
+		<nav class="social-navigation" role="navigation" aria-label="Menu de liens sociaux de pied de page">
+			<div class="menu-menu-des-liens-de-reseaux-sociaux-container">
+				<ul id="menu-menu-des-liens-de-reseaux-sociaux" class="social-links-menu">
+					<li id="menu-item-26"
+						class="menu-item menu-item-type-custom menu-item-object-custom menu-item-26">
+						<a href="mailto:andpr.president@gmail.com"><span
+								class="screen-reader-text">E-mail</span>
+							<svg class="icon icon-envelope-o" aria-hidden="true" role="img">
+								<use href="#icon-envelope-o" xlink:href="#icon-envelope-o"></use>
+							</svg>
+						</a></li>
+				</ul>
+			</div>
+		</nav><!-- .social-navigation -->
+		<div class="site-info">
+			<a href="https://wordpress.org/" class="imprint">
+				Fièrement propulsé par WordPress </a>
+		</div><!-- .site-info -->
+	</div><!-- .wrap -->
+</footer><!-- #colophon -->

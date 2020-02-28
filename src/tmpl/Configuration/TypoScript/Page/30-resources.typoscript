@@ -2,15 +2,30 @@ page {
 
     # Css
     includeCSS {
-        css_file10 = EXT:tmpl/Resources/Public/Styles/jquery.mmenu.all.css
-        css_file11 = EXT:tmpl/Resources/Public/Styles/sm-core-css.css
-        css_file12 = EXT:tmpl/Resources/Public/Styles/sm-clean/sm-clean.css
-        css_file15 = EXT:tmpl/Resources/Public/Styles/jquery.mmenu.all.css
 
-        #css_file20 = EXT:tmpl/Resources/Public/Styles/mailform.css
-        #css_file20.media = all
-        css_file21 = EXT:tmpl/Resources/Public/Styles/print.css
-        css_file21.media = print
+
+    <script type="text/javascript" src="js/jquery_002.js"></script>
+    <script type="text/javascript" src="js/jquery-migrate.js"></script>
+
+
+        css_file10 = EXT:tmpl/Resources/Public/Styles/style_002.css
+        css_file10.media = all
+        css_file11 = EXT:tmpl/Resources/Public/Styles/theme.css
+        css_file11.media = all
+        css_file12 = EXT:tmpl/Resources/Public/Styles/sm-clean/css.css
+        css_file12.media = all
+        css_file13 = EXT:tmpl/Resources/Public/Styles/style.css
+        css_file13.media = all
+        css_file14 = EXT:tmpl/Resources/Public/Styles/blocks.css
+        css_file14.media = all
+
+        css_file21 = EXT:tmpl/Resources/Public/Styles/ie8.css
+        css_file21.allWrap = <!--[if IE 9]>|<![endif]-->
+        css_file21.excludeFromConcatenation=1
+        css_file21.media = all
+
+        #css_file22 = EXT:tmpl/Resources/Public/Styles/print.css
+        #css_file22.media = print
     }
 
     # Scss
@@ -24,37 +39,48 @@ page {
         #css_file3_bootstrap_flex = EXT:tmpl/Resources/Public/Scss/bootstrap/bootstrap-flex.scss
         #css_file3_bootstrap_flex.outputdir = EXT:tmpl/Resources/Public/Css/
 
-        css_file5_bootstrap = EXT:tmpl/Resources/Public/Scss/bootstrap/bootstrap.scss
-        css_file5_bootstrap.outputdir = EXT:tmpl/Resources/Public/CompiledCss/
+        #css_file5_bootstrap = EXT:tmpl/Resources/Public/Scss/bootstrap/bootstrap.scss
+        #css_file5_bootstrap.outputdir = EXT:tmpl/Resources/Public/CompiledCss/
 
-        css_file100_style = EXT:tmpl/Resources/Public/Scss/style.scss
-        css_file100_style.outputdir = EXT:tmpl/Resources/Public/CompiledCss/
+        #css_file100_style = EXT:tmpl/Resources/Public/Scss/style.scss
+        #css_file100_style.outputdir = EXT:tmpl/Resources/Public/CompiledCss/
 
         # Css
-        css_file99 = EXT:tmpl/Resources/Public/Styles/mailform.css
-        css_file101 = EXT:tmpl/Resources/Public/Styles/style.css
-        css_file102 = EXT:tmpl/Resources/Public/Styles/menu.css
-        css_file103 = EXT:tmpl/Resources/Public/Styles/media_queries.css
+        #css_file99 = EXT:tmpl/Resources/Public/Styles/mailform.css
+        #css_file101 = EXT:tmpl/Resources/Public/Styles/style.css
+        #css_file102 = EXT:tmpl/Resources/Public/Styles/menu.css
+        #css_file103 = EXT:tmpl/Resources/Public/Styles/media_queries.css
 
 
-        200_custom_css = EXT:tmpl/Resources/Public/Css/custom.css
+        #200_custom_css = EXT:tmpl/Resources/Public/Css/custom.css
     }
 
     # Js to header
     includeJSLibs {
-        10_jquery = EXT:tmpl/Resources/Public/Javascript/jquery/jquery.min.js
+        js_file1 = EXT:tmpl/Resources/Public/Javascript/jquery_002.js
+        js_file2  = EXT:tmpl/Resources/Public/Javascript/jquery-migrate.js
+
+        js_file3  = EXT:tmpl/Resources/Public/Javascript/html5.js
+        js_file3.allWrap = <!--[if IE 9]>|<![endif]-->
+        js_file3.excludeFromConcatenation=1
     }
 
     #Js to footer
     includeJSFooter {
-        #js_file1 = EXT:tmpl/Resources/Public/Javascript/bootstrap.min.js
-        #js_file2 = EXT:tmpl/Resources/Public/Javascript/ie10-viewport-bug-workaround.js
+
+        <script type="text/javascript" src="js/global.js"></script>
+        <script type="text/javascript" src="js/jquery.js"></script>
+
+        js_file11 = EXT:tmpl/Resources/Public/Javascript/skip-link-focus-fix.js
+        js_file12 = EXT:tmpl/Resources/Public/Javascript/navigation.js
+        js_file13 = EXT:tmpl/Resources/Public/Javascript/global.js
+        js_file14 = EXT:tmpl/Resources/Public/Javascript/jquery.js
 
         #js_file4 = http://api-maps.yandex.ru/1.1/index.xml?key=AHo-NEwBAAAAnlf3HQIAo0uILcx8SxdcH09EYYFMjMT8OVQAAAAAAAAAAABU7ABfndalW9DMJOwTze18Ywt9uQ==
         #js_file5 = EXT:tmpl/Resources/Public/Javascript/yandexMap.js
 
-        js_file10 = EXT:tmpl/Resources/Public/Javascript/jquery.mmenu.all.min.js
-        js_file11 = EXT:tmpl/Resources/Public/Javascript/main.js
+        #js_file10 = EXT:tmpl/Resources/Public/Javascript/jquery.mmenu.all.min.js
+        #js_file11 = EXT:tmpl/Resources/Public/Javascript/main.js
     }
 
 }

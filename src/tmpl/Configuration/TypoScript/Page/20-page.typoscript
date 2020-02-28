@@ -77,11 +77,17 @@ page {
             #    stdWrap.required = 1
             #}
 
-            content_right < styles.content.get
-            content_right.select.where = colPos=1
+            content_1 < styles.content.get
+            content_1.select.where = colPos=1
 
-            content_left < styles.content.get
-            content_left.select.where = colPos=0
+            content_2 < styles.content.get
+            content_2.select.where = colPos=2
+
+            content_3 < styles.content.get
+            content_3.select.where = colPos=3
+            
+            content_4 < styles.content.get
+            content_4.select.where = colPos=4
         }
 
     }
