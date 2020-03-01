@@ -107,6 +107,9 @@ return [
         'rte_ckeditor_image' => [
             'packagePath' => 'typo3conf/ext/rte_ckeditor_image/',
         ],
+        'dce' => [
+            'packagePath' => 'typo3conf/ext/dce/',
+        ],
         'extension_builder' => [
             'packagePath' => 'typo3conf/ext/extension_builder/',
         ],
