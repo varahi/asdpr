@@ -1,0 +1,16 @@
+# **************************************************
+# Add the teaser to the "New Content Element Wizard"
+# **************************************************
+mod.wizards.newContentElement.wizardItems.common {
+	elements {
+		ce_panel_image {
+			iconIdentifier = content-image
+			title = LLL:EXT:tmpl/Resources/Private/Language/locallang_db.xlf:ce.teaser_teacher_title
+			description = LLL:EXT:tmpl/Resources/Private/Language/locallang_db.xlf:ce.teaser_teacher_description
+			tt_content_defValues {
+				CType = ce_panel_image
+			}
+		}
+	}
+	show := addToList(ce_panel_image)
+}

@@ -1,0 +1,27 @@
+# Page TS
+tx_gridelements {
+    overruleRecords = 1
+    setup {
+        PanelImage {
+            title = Panel Image
+            description = Grid element with panel image
+            flexformDS = FILE:EXT:tmpl/Configuration/Gridelements/Panel_Image/Configuration/FlexForms/Configuration.xml
+            icon = EXT:tmpl/Configuration/Gridelements/Panel_Image/Public/Icons/icon.gif
+            topLevelLayout = 1
+            config {
+                colCount = 1
+                rowCount = 1
+                rows {
+                    1 {
+                        columns {
+                            1 {
+                                name = Panel Image
+                                colPos = 0
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

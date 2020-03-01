@@ -93,6 +93,10 @@
 				<source><![CDATA[Last banner in line ]]></source>
 			</trans-unit>
 
+			<trans-unit id="flexforms.backgroundimage">
+				<source><![CDATA[Panel Image]]></source>
+			</trans-unit>
+
 		</body>
 	</file>
 </xliff>

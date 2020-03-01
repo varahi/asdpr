@@ -12,3 +12,7 @@
 ##############
 <INCLUDE_TYPOSCRIPT: source="DIR:EXT:tmpl/Ce/ce_teacher/Configuration/TypoScript/" extensions="typoscript">
 <INCLUDE_TYPOSCRIPT: source="DIR:EXT:tmpl/Ce/ce_banner/Configuration/TypoScript/" extensions="typoscript">
+
+# Gridelements
+##############
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:tmpl/Configuration/Gridelements/Panel_Image/Configuration/TypoScript/" extensions="typoscript">
