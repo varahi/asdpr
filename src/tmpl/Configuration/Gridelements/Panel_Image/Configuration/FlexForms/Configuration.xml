@@ -5,9 +5,10 @@
     <ROOT type="array">
         <type>array</type>
         <el type="array">
+            <!-- Padding top -->
             <bgimage>
                 <TCEforms>
-                    <label>Background Image</label>
+                    <label>LLL:EXT:tmpl/Resources/Private/Language/locallang_db.xlf:flexforms_general.backgorund_image</label>
                     <config>
                         <type>inline</type>
 
@@ -33,6 +34,18 @@
                     </config>
                 </TCEforms>
             </bgimage>
+
+            <!-- Padding top -->
+            <paddingTop>
+                <TCEforms>
+                    <label>LLL:EXT:tmpl/Resources/Private/Language/locallang_db.xlf:flexforms_general.padding_top</label>
+                    <config>
+                        <type>input</type>
+                        <size>20</size>
+                    </config>
+                </TCEforms>
+            </paddingTop>
+
         </el>
     </ROOT>
 </T3DataStructure>

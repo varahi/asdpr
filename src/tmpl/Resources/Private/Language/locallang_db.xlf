@@ -93,8 +93,11 @@
 				<source><![CDATA[Last banner in line ]]></source>
 			</trans-unit>
 
-			<trans-unit id="flexforms.backgroundimage">
+			<trans-unit id="flexforms_general.backgorund_image">
 				<source><![CDATA[Panel Image]]></source>
+			</trans-unit>
+			<trans-unit id="flexforms_general.padding_top">
+				<source><![CDATA[Padding top (% or px)]]></source>
 			</trans-unit>
 
 		</body>
