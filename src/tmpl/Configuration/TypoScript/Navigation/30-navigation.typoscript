@@ -1,22 +1,49 @@
-# lib.navigation.submenu
-lib.navigation = HMENU
-lib.navigation {
+lib.navMenu = COA
+lib.navMenu {
+        10 = HMENU
+        10 {
 
-    wrap = <div class="wrap">|</div>
-    #special = directory
-    #special.value = {$config.rootPageId}
 
-    1 = TMENU
-    1.NO.doNotShowLink = 1
 
-    2 = TMENU
-    2 {
-        NO.linkWrap = <li>|</li>
+            1 = TMENU
+            1.expAll = 1
+            1.entryLevel = 0
 
-        ACT = 1
-        ACT.linkWrap = <li class="active">|</li>
+            1.wrap = <ul class="menu">|</ul>
+            #1.NO.ATagParams = class="menu-item"
+            1.NO.wrapItemAndSub = <li class="menu-item">|</li>
 
-        wrap = <ul class="left-menu">|</ul>
-    } # 2 end
+            1.ACT = 1
+            #1.ACT.ATagParams = class="menu-item"
+            1.ACT.wrapItemAndSub = <li class="current-menu-item">|</li>
 
-}
+
+            1 { IFSUB = 1
+                IFSUB.wrapItemAndSub  = <li class="menu-item">|</li>
+                )
+                #IFSUB.ATagTitle.field = abstract // description // title
+                #IFSUB.ATagParams = class="menu-item" data-toogle="dropdown"
+
+                ACTIFSUB = 1
+                ACTIFSUB.wrapItemAndSub  (
+                    <li class="current-menu-item">
+                    <a>|<svg class="icon icon-angle-down" aria-hidden="true" role="img">
+                    <use href="#icon-angle-down" xlink:href="#icon-angle-down"></use></svg></a>
+                    <button class="dropdown-toggle" aria-expanded="false">
+                        <svg class="icon icon-angle-down" aria-hidden="true" role="img">
+                        <use href="#icon-angle-down" xlink:href="#icon-angle-down"></use>
+                        <span class="svg-fallback icon-angle-down"></span></svg>
+                        <span class="screen-reader-text">Ouvrir le sous-menu</span>
+                    </button>
+                    </li>
+                )
+                #ACTIFSUB.ATagTitle.field = abstract // description // title
+                #ACTIFSUB.ATagParams = class="menu-item" data-toogle="dropdown"
+            }
+
+            2 = TMENU
+            2.expAll = 0
+            2.wrap = <ul class="sub-menu"><li class="menu-item">|</li></ul>
+             }
+         }
+    }
