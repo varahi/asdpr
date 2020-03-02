@@ -10,12 +10,9 @@
 <f:section name="content">
 	<div class="row">
 		<div class="right-column col-lg-8 push-lg-4">
-			<f:cObject typoscriptObjectPath="lib.calendarLink" />
 			{content_right -> f:format.raw()}
-			<f:cObject typoscriptObjectPath="lib.content.right" />
 		</div>
 		<div class="left-column col-lg-4 pull-lg-8">
-			<f:cObject typoscriptObjectPath="lib.navigation.submenu" />
 			{content_left -> f:format.raw()}
 		</div>
 	</div>

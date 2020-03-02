@@ -68,9 +68,6 @@ page {
     #Js to footer
     includeJSFooter {
 
-        <script type="text/javascript" src="js/global.js"></script>
-        <script type="text/javascript" src="js/jquery.js"></script>
-
         js_file11 = EXT:tmpl/Resources/Public/Javascript/skip-link-focus-fix.js
         js_file12 = EXT:tmpl/Resources/Public/Javascript/navigation.js
         js_file13 = EXT:tmpl/Resources/Public/Javascript/global.js

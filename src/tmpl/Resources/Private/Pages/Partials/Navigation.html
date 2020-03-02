@@ -1,3 +1,25 @@
 <div class="navigation-top">
-    <f:cObject typoscriptObjectPath="lib.navigatoin" />
+    <div class="wrap">
+        <nav id="site-navigation" class="main-navigation" role="navigation" aria-label="Menu supérieur">
+            <button class="menu-toggle" aria-controls="top-menu" aria-expanded="false">
+                <svg class="icon icon-bars" aria-hidden="true" role="img">
+                    <use href="#icon-bars" xlink:href="#icon-bars"></use>
+                </svg>
+                <svg class="icon icon-close" aria-hidden="true" role="img">
+                    <use href="#icon-close" xlink:href="#icon-close"></use>
+                </svg>
+                Menu
+            </button>
+
+            <div class="menu-menu-superieur-container">
+                <f:cObject typoscriptObjectPath="lib.navMenu" />
+            </div>
+            <a href="#content" class="menu-scroll-down">
+                <svg class="icon icon-arrow-right" aria-hidden="true" role="img">
+                    <use href="#icon-arrow-right" xlink:href="#icon-arrow-right"></use>
+                </svg>
+                <span class="screen-reader-text">Descendre au contenu</span></a>
+        </nav>
+    </div>
+
 </div><!-- .navigation-top -->
