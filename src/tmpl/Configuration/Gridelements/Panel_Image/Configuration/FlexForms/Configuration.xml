@@ -5,7 +5,6 @@
     <ROOT type="array">
         <type>array</type>
         <el type="array">
-            <!-- Padding top -->
             <bgimage>
                 <TCEforms>
                     <label>LLL:EXT:tmpl/Resources/Private/Language/locallang_db.xlf:flexforms_general.backgorund_image</label>

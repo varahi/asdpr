@@ -4,13 +4,13 @@ lib.logo {
     wrap = |
     10 = IMAGE
     10 {
-        file = EXT:tmpl/Resources/Public/Images/logo.svg
+        file = EXT:tmpl/Resources/Public/Image/cropped-logos_06-1.png
         altText = {$page.header.logoTitle}
         titleText = {$page.header.logoTitle}
-        file.width = 242
-        file.height = 50
+        file.width = 363
+        file.height = 250
         stdWrap.typolink.parameter = 1
-        stdWrap.wrap = |
+        stdWrap.wrap = |< class="custom-logo">
         stdWrap.typolink.title = {$page.header.logoTitle}
     }
 }
