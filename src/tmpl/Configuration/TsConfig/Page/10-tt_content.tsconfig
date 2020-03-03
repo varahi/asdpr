@@ -4,8 +4,10 @@
 # -----------------------------------------------------------------------------
 #
 TCEFORM.tt_content {
+
     header_layout {
-        removeItems = 0,100
+        //removeItems = 0,100
+        removeItems = 0,4,5
         altLabels {
             1 = H1
             2 = H2
@@ -14,6 +16,7 @@ TCEFORM.tt_content {
             5 = H5
         }
     }
+
 
     frame_class {
         disableNoMatchingValueElement = 1

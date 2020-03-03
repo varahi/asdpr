@@ -20,11 +20,12 @@ return [
     ],
     'EXT' => [
         'extConf' => [
-            'backend' => 'a:6:{s:9:"loginLogo";s:0:"";s:19:"loginHighlightColor";s:0:"";s:20:"loginBackgroundImage";s:0:"";s:13:"loginFootnote";s:0:"";s:11:"backendLogo";s:0:"";s:14:"backendFavicon";s:0:"";}',
-            'extension_builder' => 'a:3:{s:15:"enableRoundtrip";s:1:"1";s:15:"backupExtension";s:1:"1";s:9:"backupDir";s:35:"uploads/tx_extensionbuilder/backups";}',
+            'backend' => 'a:6:{s:14:"backendFavicon";s:0:"";s:11:"backendLogo";s:0:"";s:20:"loginBackgroundImage";s:0:"";s:13:"loginFootnote";s:0:"";s:19:"loginHighlightColor";s:0:"";s:9:"loginLogo";s:0:"";}',
+            'bootstrap_grids' => 'a:1:{s:19:"enableGridSimpleRow";s:1:"0";}',
+            'extension_builder' => 'a:3:{s:9:"backupDir";s:35:"uploads/tx_extensionbuilder/backups";s:15:"backupExtension";s:1:"1";s:15:"enableRoundtrip";s:1:"1";}',
             'extensionmanager' => 'a:2:{s:21:"automaticInstallation";s:1:"1";s:11:"offlineMode";s:1:"0";}',
-            'gridelements' => 'a:6:{s:20:"additionalStylesheet";s:0:"";s:19:"nestingInListModule";s:1:"0";s:26:"overlayShortcutTranslation";s:1:"0";s:19:"disableDragInWizard";s:1:"0";s:25:"disableCopyFromPageButton";s:1:"0";s:38:"disableAutomaticUnusedColumnCorrection";s:1:"0";}',
-            'lfeditor' => 'a:9:{s:13:"viewLanguages";s:0:"";s:15:"defaultLanguage";s:0:"";s:11:"searchRegex";s:60:"/^([a-z0-9_]*locallang[a-z0-9_-]*\\.(php|xml)|[^\\.]*\\.xlf)$/i";s:9:"extIgnore";s:23:"/^(CVS|.svn|.git|csh_)/";s:12:"extWhitelist";s:0:"";s:13:"changeXlfDate";s:1:"1";s:17:"editModeExtension";s:1:"1";s:27:"pathAdditionalConfiguration";s:37:"typo3conf/AdditionalConfiguration.php";s:16:"beMainModuleName";s:4:"user";}',
+            'gridelements' => 'a:6:{s:20:"additionalStylesheet";s:0:"";s:38:"disableAutomaticUnusedColumnCorrection";s:1:"0";s:25:"disableCopyFromPageButton";s:1:"0";s:19:"disableDragInWizard";s:1:"0";s:19:"nestingInListModule";s:1:"0";s:26:"overlayShortcutTranslation";s:1:"0";}',
+            'lfeditor' => 'a:9:{s:16:"beMainModuleName";s:4:"user";s:13:"changeXlfDate";s:1:"1";s:15:"defaultLanguage";s:0:"";s:17:"editModeExtension";s:1:"1";s:9:"extIgnore";s:23:"/^(CVS|.svn|.git|csh_)/";s:12:"extWhitelist";s:0:"";s:27:"pathAdditionalConfiguration";s:37:"typo3conf/AdditionalConfiguration.php";s:11:"searchRegex";s:60:"/^([a-z0-9_]*locallang[a-z0-9_-]*\\.(php|xml)|[^\\.]*\\.xlf)$/i";s:13:"viewLanguages";s:0:"";}',
             'scheduler' => 'a:2:{s:11:"maxLifetime";s:4:"1440";s:15:"showSampleTasks";s:1:"1";}',
             'tmpl' => 'a:2:{s:14:"enableOnColPos";s:1:"0";s:21:"enableOnGridColumnIds";s:3:"111";}',
             'vhs' => 'a:1:{s:20:"disableAssetHandling";s:1:"0";}',
@@ -38,6 +39,9 @@ return [
             'loginFootnote' => '',
             'loginHighlightColor' => '',
             'loginLogo' => '',
+        ],
+        'bootstrap_grids' => [
+            'enableGridSimpleRow' => '0',
         ],
         'extension_builder' => [
             'backupDir' => 'uploads/tx_extensionbuilder/backups',
