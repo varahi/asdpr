@@ -3,10 +3,10 @@ tx_gridelements {
     overruleRecords = 1
     setup {
         PanelImage {
-            title = Panel Image
-            description = Grid element with panel image
-            flexformDS = FILE:EXT:tmpl/Configuration/Gridelements/Panel_Image/Configuration/FlexForms/Configuration.xml
-            icon = EXT:tmpl/Configuration/Gridelements/Panel_Image/Public/Icons/icon.gif
+            title = LLL:EXT:tmpl/Resources/Private/Language/locallang_db.xlf:gridelement.panel_image.title
+            description = LLL:EXT:tmpl/Resources/Private/Language/locallang_db.xlf:gridelement.panel_image.description
+            flexformDS = FILE:EXT:tmpl/Configuration/Gridelements/PanelImage/Configuration/FlexForms/Configuration.xml
+            icon = EXT:tmpl/Configuration/Gridelements/PanelImage/Public/Icons/icon.gif
             frame = 3
             topLevelLayout = 1
             config {
@@ -16,7 +16,7 @@ tx_gridelements {
                     1 {
                         columns {
                             1 {
-                                name = Panel Image
+                                name = LLL:EXT:tmpl/Resources/Private/Language/locallang_db.xlf:gridelement.panel_image.background_image
                                 colPos = 101
                                 allowed = image
                             }
@@ -26,7 +26,7 @@ tx_gridelements {
                     2 {
                         columns {
                             1 {
-                                name = Content
+                                name = LLL:EXT:tmpl/Resources/Private/Language/locallang_db.xlf:gridelement.panel_image.content
                                 colPos = 102
                                 allowed = *
                             }

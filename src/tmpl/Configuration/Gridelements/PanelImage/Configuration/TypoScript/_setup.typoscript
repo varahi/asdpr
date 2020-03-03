@@ -5,7 +5,7 @@ tt_content.gridelements_pi1.20.10.setup {
     PanelImage {
         cObject = FLUIDTEMPLATE
         cObject {
-            file = EXT:tmpl/Configuration/Gridelements/Panel_Image/Private/Templates/Template.html
+            file = EXT:tmpl/Configuration/Gridelements/PanelImage/Private/Templates/Template.html
 
             dataProcessing {
                 10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
@@ -24,7 +24,7 @@ PanelImage < lib.gridelements.defaultGridSetup
 PanelImage {
     cObject = FLUIDTEMPLATE
     cObject {
-        file = EXT:tmpl/Configuration/Gridelements/Panel_Image/Private/Templates/Template.html
+        file = EXT:tmpl/Configuration/Gridelements/PanelImage/Private/Templates/Template.html
         dataProcessing {
             10 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
             10 {

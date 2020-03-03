@@ -15,4 +15,4 @@
 
 # Gridelements
 ##############
-<INCLUDE_TYPOSCRIPT: source="DIR:EXT:tmpl/Configuration/Gridelements/Panel_Image/Configuration/TypoScript/" extensions="typoscript">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:tmpl/Configuration/Gridelements/PanelImage/Configuration/TypoScript/" extensions="typoscript">

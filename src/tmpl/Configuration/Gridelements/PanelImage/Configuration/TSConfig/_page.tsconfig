@@ -5,8 +5,8 @@ tx_gridelements {
         PanelImage {
             title = Panel Image
             description = Grid element with panel image
-            //flexformDS = FILE:EXT:tmpl/Configuration/Gridelements/Panel_Image/Configuration/FlexForms/Configuration.xml
-            icon = EXT:tmpl/Configuration/Gridelements/Panel_Image/Public/Icons/icon.gif
+            //flexformDS = FILE:EXT:tmpl/Configuration/Gridelements/PanelImage/Configuration/FlexForms/Configuration.xml
+            icon = EXT:tmpl/Configuration/Gridelements/PanelImage/Public/Icons/icon.gif
             topLevelLayout = 1
             config {
                 colCount = 1

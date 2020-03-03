@@ -100,6 +100,19 @@
 				<source><![CDATA[Padding top (% or px)]]></source>
 			</trans-unit>
 
+			<trans-unit id="gridelement.panel_image.title">
+				<source><![CDATA[Panel element]]></source>
+			</trans-unit>
+			<trans-unit id="gridelement.panel_image.description">
+				<source><![CDATA[Grid element with panel image]]></source>
+			</trans-unit>
+			<trans-unit id="gridelement.panel_image.background_image">
+				<source><![CDATA[Background Image]]></source>
+			</trans-unit>
+			<trans-unit id="gridelement.panel_image.content">
+				<source><![CDATA[Content]]></source>
+			</trans-unit>
+
 		</body>
 	</file>
 </xliff>
