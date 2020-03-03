@@ -1,0 +1,18 @@
+
+<div class="panel-image"
+     style="background-image: url({f:uri.image(src: '{data.flexform_bgimage}', treatIdAsReference: 1)});">
+    <div class="panel-image-prop" style="padding-top: {data.flexform_paddingTop}%"></div>
+</div><!-- .panel-image -->
+<div class="panel-content">
+    <div class="wrap">
+        <header class="entry-header">
+            <h2 class="entry-title"><f:format.raw>{data.tx_gridelements_view_children.0.header}</f:format.raw></h2>
+
+        </header><!-- .entry-header -->
+
+        <div class="entry-content">
+
+            <f:format.raw>{data.tx_gridelements_view_children.0.bodytext}</f:format.raw>
+        </div>
+    </div>
+</div><!-- .entry-content -->
