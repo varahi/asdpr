@@ -1,0 +1,13 @@
+lib.topImage = IMAGE
+lib.topImage {
+    wrap (
+                <div  class="wp-custom-header">|</div>
+    )
+    file.treatIdAsReference = 1
+    file.import.data = levelmedia: -1,slide
+    file.import.listNum = 0
+    file.import.override.field = media
+    file.width = 2000c
+    file.height = 1200c
+    altText.data = page:title
+}

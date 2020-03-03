@@ -18,6 +18,8 @@ page {
         css_file13.media = all
         css_file14 = EXT:tmpl/Resources/Public/Styles/blocks.css
         css_file14.media = all
+        css_file15 = EXT:tmpl/Resources/Public/Styles/custom.css
+        css_file15.media = all
 
         css_file21 = EXT:tmpl/Resources/Public/Styles/ie8.css
         css_file21.allWrap = <!--[if IE 9]>|<![endif]-->

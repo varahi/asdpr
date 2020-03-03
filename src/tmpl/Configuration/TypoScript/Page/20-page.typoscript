@@ -77,6 +77,9 @@ page {
             #    stdWrap.required = 1
             #}
 
+            content_left < styles.content.get
+            content_left.select.where = colPos=0
+
             content_1 < styles.content.get
             content_1.select.where = colPos=1
 
@@ -96,10 +99,17 @@ page {
 
 page.bodyTag >
 page.bodyTagCObject = TEXT
+[page["uid"] == 10]
 page.bodyTagCObject {
     field = uid
-    wrap = <body class="uid-|">
+    wrap = <body class="home page-template-default page page-id-7 wp-custom-logo wp-embed-responsive twentyseventeen-front-page has-header-image page-two-column colors-light uid-| ">
 }
+[ELSE]
+    page.bodyTagCObject {
+        field = uid
+        wrap = <body class="page-template-default page page-id-8 wp-custom-logo wp-embed-responsive has-header-image page-two-column colors-light uid-| ">
+    }
+[END]
 
 #########################
 ##### DEVELOPMENT - Start

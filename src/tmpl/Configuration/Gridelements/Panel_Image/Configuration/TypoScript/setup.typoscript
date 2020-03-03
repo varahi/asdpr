@@ -1,11 +1,30 @@
-#tt_content.gridelements_pi1.10 =< lib.stdheader
 tt_content.gridelements_pi1.20.10.setup {
 
     PanelImage < lib.gridelements.defaultGridSetup
     PanelImage {
         cObject = FLUIDTEMPLATE
         cObject {
-            file = EXT:tmpl/Gridelements/Grid_1Col/Resources/Private/Templates/Template.html
+            file = EXT:tmpl/Configuration/Gridelements/Panel_Image/Private/Templates/Template.html
+            dataProcessing {
+                10 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+                10 {
+                    table = tt_content
+                    where.data = field:uid
+                    where.wrap = tx_gridelements_columns = 101 AND tx_gridelements_container=|
+                    orderBy = sorting
+                    as = content
+
+                    dataProcessing {
+                        10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+                        10 {
+                            references.fieldName = image
+                            references.table = tt_content
+                            as = image
+                        }
+                    }
+                }
+            }
         }
     }
 }
+
