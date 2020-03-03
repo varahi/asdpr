@@ -1,8 +1,7 @@
 lib.topImage = IMAGE
 lib.topImage {
-    wrap (<div class="custom-header-media">
+    wrap (
                 <div  class="wp-custom-header">|</div>
-        </div>
     )
     file.treatIdAsReference = 1
     file.import.data = levelmedia: -1,slide
