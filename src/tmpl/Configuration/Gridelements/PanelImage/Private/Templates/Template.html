@@ -1,9 +1,7 @@
 <f:if condition="{content.0.image}">
-    <f:for each="{content}" as="data">
-        <div class="panel-image" style="background-image: url({f:uri.image(src: '{data.image.0.originalFile.uid}')});">
-            <div class="panel-image-prop" style="padding-top: {data.flexform_paddingTop}"></div>
-        </div>
-    </f:for>
+    <div class="panel-image" style="background-image: url({f:uri.image(src: '{content.0.image.0.originalFile.uid}')});">
+        <div class="panel-image-prop" style="padding-top: {data.flexform_paddingTop}"></div>
+    </div>
 </f:if>
 <!-- .panel-image -->
 
