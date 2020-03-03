@@ -72,35 +72,19 @@ mod.web_layout.BackendLayouts {
         }
     }
 
-    /*
-    2 {
-        title = Inner page
+    3 {
+        title = Full width
         icon = tmpl-backend-layout
         config {
             backend_layout {
-                colCount = 3
-                rowCount = 2
+                colCount = 1
+                rowCount = 1
                 rows {
                     1 {
                         columns {
                             1 {
-                                name = Headerimage
-                                colspan = 3
-                                colPos = 3
-                                allowed = image
-                            }
-                        }
-                    }
-                    2 {
-                        columns {
-                            1 {
                                 name = Content
-                                colspan = 2
                                 colPos = 0
-                            }
-                            2 {
-                                name = Sidebar
-                                colPos = 1
                             }
                         }
                     }
@@ -108,7 +92,7 @@ mod.web_layout.BackendLayouts {
             }
         }
     }
-    */
+
 
 
 }

@@ -50,6 +50,9 @@ page {
                     pagets__2 = TEXT
                     pagets__2.value = Inner
 
+                    pagets__3 = TEXT
+                    pagets__3.value = FullWidth
+
                     default = TEXT
                     default.value = Inner
                 }
@@ -77,8 +80,8 @@ page {
             #    stdWrap.required = 1
             #}
 
-            content_left < styles.content.get
-            content_left.select.where = colPos=0
+            content < styles.content.get
+            content.select.where = colPos=0
 
             content_1 < styles.content.get
             content_1.select.where = colPos=1

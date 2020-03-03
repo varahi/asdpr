@@ -7,24 +7,31 @@ page {
     <script type="text/javascript" src="js/jquery_002.js"></script>
     <script type="text/javascript" src="js/jquery-migrate.js"></script>
 
+        10_css_file10 = EXT:tmpl/Resources/Public/Styles/style_002.css
+        10_css_file10.media = all
 
-        css_file10 = EXT:tmpl/Resources/Public/Styles/style_002.css
-        css_file10.media = all
-        css_file11 = EXT:tmpl/Resources/Public/Styles/theme.css
-        css_file11.media = all
-        css_file12 = EXT:tmpl/Resources/Public/Styles/sm-clean/css.css
-        css_file12.media = all
-        css_file13 = EXT:tmpl/Resources/Public/Styles/style.css
-        css_file13.media = all
-        css_file14 = EXT:tmpl/Resources/Public/Styles/blocks.css
-        css_file14.media = all
-        css_file15 = EXT:tmpl/Resources/Public/Styles/custom.css
-        css_file15.media = all
+        20_css_file11 = EXT:tmpl/Resources/Public/Styles/theme.css
+        20_css_file11.media = all
 
-        css_file21 = EXT:tmpl/Resources/Public/Styles/ie8.css
-        css_file21.allWrap = <!--[if IE 9]>|<![endif]-->
-        css_file21.excludeFromConcatenation=1
-        css_file21.media = all
+        30_css_file12 = EXT:tmpl/Resources/Public/Styles/sm-clean/css.css
+        30_css_file12.media = all
+
+        40_css_file13 = EXT:tmpl/Resources/Public/Styles/style.css
+        40_css_file13.media = all
+
+        50_css_file14 = EXT:tmpl/Resources/Public/Styles/blocks.css
+        50_css_file14.media = all
+
+        50_css_bootstrap = EXT:tmpl/Resources/Public/Styles/bootstrap/bootstrap.min.css
+        60_css_bootstrap_grid = EXT:tmpl/Resources/Public/Styles/bootstrap/bootstrap-grid.min.css
+
+        100_css_file15 = EXT:tmpl/Resources/Public/Styles/custom.css
+        100_css_file15.media = all
+
+        200_css_file21 = EXT:tmpl/Resources/Public/Styles/ie8.css
+        200_css_file21.allWrap = <!--[if IE 9]>|<![endif]-->
+        200_css_file21.excludeFromConcatenation=1
+        200_css_file21.media = all
 
         #css_file22 = EXT:tmpl/Resources/Public/Styles/print.css
         #css_file22.media = print
