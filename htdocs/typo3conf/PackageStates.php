@@ -98,12 +98,6 @@ return [
         'viewpage' => [
             'packagePath' => 'typo3/sysext/viewpage/',
         ],
-        'gridelements' => [
-            'packagePath' => 'typo3conf/ext/gridelements/',
-        ],
-        'bootstrap_grids' => [
-            'packagePath' => 'typo3conf/ext/bootstrap_grids/',
-        ],
         'rte_ckeditor_image' => [
             'packagePath' => 'typo3conf/ext/rte_ckeditor_image/',
         ],
@@ -115,6 +109,9 @@ return [
         ],
         'fancybox' => [
             'packagePath' => 'typo3conf/ext/fancybox/',
+        ],
+        'gridelements' => [
+            'packagePath' => 'typo3conf/ext/gridelements/',
         ],
         'jumpurl' => [
             'packagePath' => 'typo3conf/ext/jumpurl/',

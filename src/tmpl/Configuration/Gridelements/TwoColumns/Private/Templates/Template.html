@@ -1,0 +1,15 @@
+
+<f:if condition="{content.0.image}">
+    <f:for each="{content}" as="content">
+        <div class="panel-image" style="background-image: url({f:uri.image(src: '{content.image.0.originalFile.uid}', treatIdAsReference: 1)});">
+            <div class="panel-image-prop" style="padding-top: {data.flexform_paddingTop}"></div>
+        </div><!-- .panel-image -->
+    </f:for>
+</f:if>
+
+
+<div class="panel-content">
+    <div class="wrap">
+        <f:format.raw>{data.tx_gridelements_view_columns.102}</f:format.raw>
+    </div>
+</div><!-- .entry-content -->

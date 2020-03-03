@@ -112,6 +112,18 @@
 			<trans-unit id="gridelement.panel_image.content">
 				<source><![CDATA[Content]]></source>
 			</trans-unit>
+			<trans-unit id="gridelement.two_columns.title">
+				<source><![CDATA[Grid element 2 columns]]></source>
+			</trans-unit>
+			<trans-unit id="gridelement.two_columns.description">
+				<source><![CDATA[Two Columns with configurations]]></source>
+			</trans-unit>
+			<trans-unit id="gridelement.left_column">
+				<source><![CDATA[Left column]]></source>
+			</trans-unit>
+			<trans-unit id="gridelement.right_column">
+				<source><![CDATA[Right column]]></source>
+			</trans-unit>
 
 		</body>
 	</file>

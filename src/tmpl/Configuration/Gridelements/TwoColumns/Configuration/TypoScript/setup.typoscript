@@ -1,0 +1,12 @@
+tt_content.gridelements_pi1.20.10.setup {
+
+    Grid_2Cols < lib.gridelements.defaultGridSetup
+    Grid_2Cols {
+        cObject = FLUIDTEMPLATE
+        cObject {
+            partialRootPath = EXT:tmpl/Configuration/Gridelements/TwoColumns/Private/Partials/
+            file = EXT:tmpl/Configuration/Gridelements/TwoColumns/Private/Templates/Template.html
+        }
+    }
+
+}

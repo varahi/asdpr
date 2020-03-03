@@ -1,0 +1,30 @@
+# Page TSConfig:
+tx_gridelements.overruleRecords = 1
+tx_gridelements.setup {
+    # ID of Element
+    Grid_2Cols {
+        title = LLL:EXT:tmpl/Resources/Private/Language/locallang_db.xlf:gridelement.two_columns.title
+        description = LLL:EXT:tmpl/Resources/Private/Language/locallang_db.xlf:gridelement.two_columns.description
+        flexformDS = FILE:EXT:tmpl/Configuration/Gridelements/TwoColumns/Configuration/FlexForms/Configuration.xml
+        icon = EXT:tmpl/Configuration/Gridelements/TwoColumns/Public/Icons/icon.gif
+        topLevelLayout = 1
+        config {
+            colCount = 2
+            rowCount = 1
+            rows {
+                1 {
+                    columns {
+                        1 {
+                            name = LLL:EXT:tmpl/Resources/Private/Language/locallang_db.xlf:gridelement.left_column
+                            colPos = 0
+                        }
+                        2 {
+                            name = LLL:EXT:tmpl/Resources/Private/Language/locallang_db.xlf:gridelement.right_column
+                            colPos = 1
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
