@@ -125,6 +125,9 @@ return [
         'lfeditor' => [
             'packagePath' => 'typo3conf/ext/lfeditor/',
         ],
+        'news' => [
+            'packagePath' => 'typo3conf/ext/news/',
+        ],
         'staticfilecache' => [
             'packagePath' => 'typo3conf/ext/staticfilecache/',
         ],

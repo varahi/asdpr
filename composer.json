@@ -36,6 +36,7 @@
 		"fluidtypo3/vhs": "^5.2",
 		"friendsoftypo3/extension-builder": "^9.10",
 		"friendsoftypo3/jumpurl": "^7.8",
+		"georgringer/news": "^7.3",
 		"gridelementsteam/gridelements": "^9.5",
 		"helhum/config-loader": "0.9",
 		"helhum/dotenv-connector": "^2.1",
