@@ -5,10 +5,10 @@
 # basic config options
 config {
 
-    language = ru
-    locale = ru_RU.UTF-8
+    language = fr
+    locale = fr_FR.UTF-8
     sys_language_uid = 0
-    locale_all = ru_RU
+    locale_all = fr_FR
 
     page {
         siteTitle =
@@ -19,6 +19,14 @@ config {
     meta {
         description =
         keywords =
+    }
+
+    footer {
+        about_site = A PROPOS DE CE SITE
+        copyright = &copy; 2020
+        email = andpr.president@gmail.com
+        siteInfoText = Fièrement propulsé par TYPO3
+        siteInfoLink = typo3.org
     }
 
     rootPageId = 1

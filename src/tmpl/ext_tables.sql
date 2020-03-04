@@ -10,3 +10,12 @@ CREATE TABLE tt_content (
   textfield text,
   is_last smallint(5) unsigned DEFAULT '0' NOT NULL,
 );
+
+
+#
+# Table structure for table 'pages'
+#
+CREATE TABLE pages (
+	page_title varchar(100) DEFAULT '' NOT NULL,
+	page_description text,
+);

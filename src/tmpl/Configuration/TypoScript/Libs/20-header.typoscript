@@ -1,0 +1,15 @@
+lib.pagetitle = COA
+lib.pagetitle {
+
+    10 = TEXT
+    10 {
+        wrap = <h1 class="site-title">|</h1>
+        data = page : page_title
+    }
+    20 = TEXT
+    20 {
+        wrap = <p class="site-description">|</p>
+        data = page : page_description
+    }
+
+}
