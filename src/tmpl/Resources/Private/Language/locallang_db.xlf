@@ -125,6 +125,13 @@
 				<source><![CDATA[Right column]]></source>
 			</trans-unit>
 
+			<trans-unit id="page.page_title">
+				<source><![CDATA[Page title]]></source>
+			</trans-unit>
+			<trans-unit id="page.page_description">
+				<source><![CDATA[Page description]]></source>
+			</trans-unit>
+
 		</body>
 	</file>
 </xliff>
