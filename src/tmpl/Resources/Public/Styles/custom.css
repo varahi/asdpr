@@ -1,3 +1,6 @@
 .panel-image {
     background-attachment: fixed;
 }
+.mail-link {
+    font-size: 0;
+}

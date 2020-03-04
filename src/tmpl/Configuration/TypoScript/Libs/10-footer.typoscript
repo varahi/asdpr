@@ -1,0 +1,46 @@
+#lib.copyright = TEXT
+#lib.copyright.value = {$config.footer.copyright}
+
+lib.copyright = COA
+lib.copyright {
+    wrap = <div class="widget-column footer-widget-2"><section id="text-5" class="widget widget_text">|</section></div>
+    10 = TEXT
+    10 {
+        wrap = <h2 class="widget-title">|</h2>
+        value = {$config.footer.about_site}
+    }
+    20 = TEXT
+    20 {
+        wrtap = <div class="textwidget">|</div>
+        value =  {$config.footer.copyright}
+    }
+}
+
+lib.mailLink = COA
+lib.mailLink {
+    10 = TEXT
+    10 {
+        value =
+        stdWrap.typolink {
+            ATagParams = class="mail-link"
+            wrap (
+            |
+            <span class="screen-reader-text">E-mail</span>
+		    <svg class="icon icon-envelope-o" aria-hidden="true" role="img">
+		    <use href="#icon-envelope-o" xlink:href="#icon-envelope-o"></use>
+		    </svg>
+            )
+            parameter = {$config.footer.email}
+            ATagBeforeWrap = 1
+        }
+    }
+}
+
+lib.siteInfo = TEXT
+lib.siteInfo {
+    value = {$config.footer.siteInfoText}
+    stdWrap.typolink {
+        parameter = {$config.footer.siteInfoLink} _blank
+        ATagParams = class="imprint"
+    }
+}
