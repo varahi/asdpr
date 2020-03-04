@@ -94,6 +94,9 @@ page {
             
             content_4 < styles.content.get
             content_4.select.where = colPos=4
+
+            content_5 < styles.content.get
+            content_5.select.where = colPos=5
         }
 
     }
@@ -105,12 +108,12 @@ page.bodyTagCObject = TEXT
 [page["uid"] == 10]
 page.bodyTagCObject {
     field = uid
-    wrap = <body class="home page-template-default page page-id-7 wp-custom-logo wp-embed-responsive twentyseventeen-front-page has-header-image page-two-column colors-light uid-| ">
+    wrap = <body class="home page-template-default page wp-custom-logo wp-embed-responsive twentyseventeen-front-page has-header-image page-two-column colors-light uid-| ">
 }
 [ELSE]
     page.bodyTagCObject {
         field = uid
-        wrap = <body class="page-template-default page page-id-8 wp-custom-logo wp-embed-responsive has-header-image page-two-column colors-light uid-| ">
+        wrap = <body class="page-template-default wp-custom-logo wp-embed-responsive has-header-image page-two-column colors-light uid-| ">
     }
 [END]
 

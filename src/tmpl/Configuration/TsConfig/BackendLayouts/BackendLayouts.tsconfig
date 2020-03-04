@@ -6,7 +6,7 @@ mod.web_layout.BackendLayouts {
         config {
             backend_layout {
                 colCount = 1
-                rowCount = 4
+                rowCount = 5
                 rows {
                     1 {
                         columns {
@@ -40,6 +40,14 @@ mod.web_layout.BackendLayouts {
                             }
                         }
                     }
+                    5 {
+                        columns {
+                            1 {
+                                name = Content_5
+                                colPos = 5
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -56,14 +64,10 @@ mod.web_layout.BackendLayouts {
                     1 {
                         columns {
                             1 {
-                                name = Left Column
+                                name = Content
                                 colspan = 33
                                 colPos = 0
-                            }
-                            2 {
-                                name = Right Column
-                                colspan = 67
-                                colPos = 1
+                                }
                             }
                         }
                     }

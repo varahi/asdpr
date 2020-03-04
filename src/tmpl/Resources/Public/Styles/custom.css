@@ -4,3 +4,21 @@
 .mail-link {
     font-size: 0;
 }
+
+.container {
+    max-width: 1000px;
+    padding-left: 3em;
+    padding-right: 3em;
+}
+
+h1 {
+    color: #222;
+    font-size: 0.875rem;
+    font-weight: 800;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    font-family: "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif;
+    clear: both;
+    line-height: 1.4;
+    margin: 0 0 0.75em;
+    padding: 1.5em 0 0;
