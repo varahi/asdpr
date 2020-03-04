@@ -3,7 +3,11 @@ lib.pagetitle {
 
     10 = TEXT
     10 {
-        wrap = <h1 class="site-title">|</h1>
+        [page["uid"] == 10]
+            wrap = <h1 class="site-title">|</h1>
+        [ELSE]
+            wrap = <p class="site-branding-text">|<p>
+        [END]
         data = page : page_title
     }
     20 = TEXT

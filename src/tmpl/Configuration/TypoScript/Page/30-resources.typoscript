@@ -22,7 +22,7 @@ page {
         50_css_file14 = EXT:tmpl/Resources/Public/Styles/blocks.css
         50_css_file14.media = all
 
-        50_css_bootstrap = EXT:tmpl/Resources/Public/Styles/bootstrap/bootstrap.min.css
+        //50_css_bootstrap = EXT:tmpl/Resources/Public/Styles/bootstrap/bootstrap.min.css
         60_css_bootstrap_grid = EXT:tmpl/Resources/Public/Styles/bootstrap/bootstrap-grid.min.css
 
         100_css_file15 = EXT:tmpl/Resources/Public/Styles/custom.css

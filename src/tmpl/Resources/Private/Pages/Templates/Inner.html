@@ -8,12 +8,7 @@
 <f:layout name="default" />
 
 <f:section name="content">
-	<div class="row">
-		<div class="right-column col-lg-8 push-lg-4">
-			{content_1 -> f:format.raw()}
-		</div>
-		<div class="left-column col-lg-4 pull-lg-8">
-			{content -> f:format.raw()}
-		</div>
+	<div class="container">
+		{content -> f:format.raw()}
 	</div>
 </f:section>

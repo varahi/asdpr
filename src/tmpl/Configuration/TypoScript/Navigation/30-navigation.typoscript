@@ -6,44 +6,58 @@ lib.navMenu {
 
 
             1 = TMENU
-            1.expAll = 1
-            1.entryLevel = 0
+            1 {
+                expAll = 1
+                entryLevel = 0
 
-            1.wrap = <ul class="menu">|</ul>
+                wrap = <ul class="menu">|</ul>
             #1.NO.ATagParams = class="menu-item"
-            1.NO.wrapItemAndSub = <li class="menu-item">|</li>
+                NO.wrapItemAndSub = <li class="menu-item menu-item-type-post_type menu-item-object-page">|</li>
 
-            1.ACT = 1
-            #1.ACT.ATagParams = class="menu-item"
-            1.ACT.wrapItemAndSub = <li class="current-menu-item">|</li>
+                ACT = 1
+                #ACT.ATagParams = class="menu-item"
+                ACT.wrapItemAndSub = <li class="menu-item-type-post_type menu-item-object-page current-menu-item">|</li>
 
 
-            1 { IFSUB = 1
-                IFSUB.wrapItemAndSub  = <li class="menu-item">|</li>
-                )
+                IFSUB = 1
+                IFSUB.wrapItemAndSub  (
+                    <li class="menu-item menu-item-has-children">|</li>
+                    )
                 #IFSUB.ATagTitle.field = abstract // description // title
-                #IFSUB.ATagParams = class="menu-item" data-toogle="dropdown"
+                IFSUB.wrap (
+                    <>|
+                    <svg class="icon icon-angle-down" aria-hidden="true" role="img">
+                        <use href="#icon-angle-down" xlink:href="#icon-angle-down"></use>
+                    </svg>
+                )
 
                 ACTIFSUB = 1
                 ACTIFSUB.wrapItemAndSub  (
-                    <li class="current-menu-item">
-                    <a>|<svg class="icon icon-angle-down" aria-hidden="true" role="img">
-                    <use href="#icon-angle-down" xlink:href="#icon-angle-down"></use></svg></a>
-                    <button class="dropdown-toggle" aria-expanded="false">
-                        <svg class="icon icon-angle-down" aria-hidden="true" role="img">
-                        <use href="#icon-angle-down" xlink:href="#icon-angle-down"></use>
-                        <span class="svg-fallback icon-angle-down"></span></svg>
-                        <span class="screen-reader-text">Ouvrir le sous-menu</span>
-                    </button>
-                    </li>
+                    <li class="current-menu-item menu-item-has-children">|</li>
                 )
                 #ACTIFSUB.ATagTitle.field = abstract // description // title
-                #ACTIFSUB.ATagParams = class="menu-item" data-toogle="dropdown"
+                ACTIFSUB.wrap (
+                    <>|
+                    <svg class="icon icon-angle-down" aria-hidden="true" role="img">
+                        <use href="#icon-angle-down" xlink:href="#icon-angle-down"></use>
+                    </svg>
+                    )
             }
 
             2 = TMENU
             2.expAll = 0
-            2.wrap = <ul class="sub-menu"><li class="menu-item">|</li></ul>
+            2.wrap (
+                    <button class="dropdown-toggle" aria-expanded="false">
+                        <svg class="icon icon-angle-down" aria-hidden="true" role="img">
+                            <use href="#icon-angle-down" xlink:href="#icon-angle-down"></use>
+                            <span class="svg-fallback icon-angle-down"></span>
+                        </svg>
+                        <span class="screen-reader-text">Ouvrir le sous-menu</span>
+                    </button>
+                    <ul class="sub-menu">
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page">|</li>
+                    </ul>
+            )
              }
          }
     }
