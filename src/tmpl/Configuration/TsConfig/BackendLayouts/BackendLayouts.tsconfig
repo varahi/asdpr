@@ -67,7 +67,7 @@ mod.web_layout.BackendLayouts {
                                 name = Content
                                 colspan = 33
                                 colPos = 0
-                                }
+
                             }
                         }
                     }
@@ -76,7 +76,8 @@ mod.web_layout.BackendLayouts {
         }
     }
 
-    3 {
+   /*
+   3 {
         title = Full width
         icon = tmpl-backend-layout
         config {
@@ -96,7 +97,7 @@ mod.web_layout.BackendLayouts {
             }
         }
     }
-
+*/
 
 
 }

@@ -18,6 +18,12 @@ styles {
             linkWrap.lightboxRelAttribute = fancybox[{field:uid}]
         }
 
+/*
+        loginform {
+            templateFile = EXT:tmpl/Resources/Private/Extensions/felogin/Templates/
+        }
+*/
+
     }
 
     templates {
@@ -27,4 +33,3 @@ styles {
     }
 
 }
-

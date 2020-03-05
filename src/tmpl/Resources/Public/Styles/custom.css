@@ -22,3 +22,18 @@ h1 {
     line-height: 1.4;
     margin: 0 0 0.75em;
     padding: 1.5em 0 0;
+}
+
+#pass {
+    margin-bottom: 8px;
+}
+
+.tx-felogin-pi1 form fieldset {
+    border: none;
+}
+.tx-felogin-pi1 form fieldset legend {
+    display: none;
+}
+.tx-felogin-pi1 > div {
+    display: none;
+}
