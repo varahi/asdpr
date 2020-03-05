@@ -1,10 +1,10 @@
 base: 'http://asdpr.org/'
 baseVariants:
   -
-    base: 'http://dev.asdpr.org/'
+    base: 'http://dev-asdpr.dyndns.org/'
     condition: 'getenv("HOST_ENV") == "serverdev"'
   -
-    base: 'https://asdpr.localhost/'
+    base: 'http://asdpr.localhost/'
     condition: 'getenv("HOST_ENV") == "localdev"'
 languages:
   -

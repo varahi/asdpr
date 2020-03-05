@@ -3,22 +3,22 @@ lib.pagetitle {
 
     10 = TEXT
     10 {
-        #[page["uid"] == 10]
-        #    wrap = <h1 class="site-title">|</h1>
-        #[ELSE]
-        #    wrap = <p class="site-branding-text">|<p>
-        #[END]
         wrap = <p class="site-branding-text">|<p>
+        //data = levelfield : -1 , page_title, slide
         data = page : page_title
+        //data = levelfield : -1 , page_title , slide
+        //value = asdasd, leveluid:-1, slide
+        //data = page : page_title, slide
     }
     20 = TEXT
     20 {
         wrap = <p class="site-description">|</p>
-        data = page : page_description
+        data = page : page_description, slide
     }
 
 }
 
 [page["uid"] == 10]
-lib.pagetitle.10.wrap = <h1 class="site-title">|</h1>
+//[getTSFE().type == 10]
+    lib.pagetitle.10.wrap = <h1 class="site-title">|</h1>
 [global]
