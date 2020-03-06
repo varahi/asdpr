@@ -65,8 +65,13 @@ p.standard-message {
 }
 
 /* Cookies */
+#tx_cookies {
+    position: relative;
+    z-index: 100;
+}
 #tx_cookies_showPermanent {
     font-size: 11px;
+    margin-top: 20px;
 }
 #tx_cookies_close {
     font-size: 11px;
