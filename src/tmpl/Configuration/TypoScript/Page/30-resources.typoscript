@@ -63,21 +63,23 @@ page {
 
     # Js to header
     includeJSLibs {
-        js_file1 = EXT:tmpl/Resources/Public/Javascript/jquery_002.js
-        js_file2  = EXT:tmpl/Resources/Public/Javascript/jquery-migrate.js
+        js_file_jquery = EXT:tmpl/Resources/Public/Javascript/jquery/jquery-2.1.1.min.js
 
-        js_file3  = EXT:tmpl/Resources/Public/Javascript/html5.js
-        js_file3.allWrap = <!--[if IE 9]>|<![endif]-->
-        js_file3.excludeFromConcatenation=1
+        js_file_10 = EXT:tmpl/Resources/Public/Javascript/jquery_002.js
+        js_file_20  = EXT:tmpl/Resources/Public/Javascript/jquery-migrate.js
+
+        js_file_30  = EXT:tmpl/Resources/Public/Javascript/html5.js
+        js_file_30.allWrap = <!--[if IE 9]>|<![endif]-->
+        js_file_30.excludeFromConcatenation=1
     }
 
     #Js to footer
     includeJSFooter {
 
-        js_file11 = EXT:tmpl/Resources/Public/Javascript/skip-link-focus-fix.js
-        js_file12 = EXT:tmpl/Resources/Public/Javascript/navigation.js
-        js_file13 = EXT:tmpl/Resources/Public/Javascript/global.js
-        js_file14 = EXT:tmpl/Resources/Public/Javascript/jquery.js
+        js_file_50 = EXT:tmpl/Resources/Public/Javascript/skip-link-focus-fix.js
+        js_file_60 = EXT:tmpl/Resources/Public/Javascript/navigation.js
+        js_file_70 = EXT:tmpl/Resources/Public/Javascript/global.js
+        #js_file14 = EXT:tmpl/Resources/Public/Javascript/jquery.js
 
         #js_file4 = http://api-maps.yandex.ru/1.1/index.xml?key=AHo-NEwBAAAAnlf3HQIAo0uILcx8SxdcH09EYYFMjMT8OVQAAAAAAAAAAABU7ABfndalW9DMJOwTze18Ywt9uQ==
         #js_file5 = EXT:tmpl/Resources/Public/Javascript/yandexMap.js

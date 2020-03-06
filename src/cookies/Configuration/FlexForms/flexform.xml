@@ -1,0 +1,85 @@
+<T3DataStructure>
+    <meta>
+        <langDisable>1</langDisable>
+    </meta>
+    <sheets>
+        <sDEF>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>General</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el>
+                    <switchableControllerActions>
+                        <TCEforms>
+                            <label>LLL:EXT:cookies/Resources/Private/Language/locallang.xlf:flexform.action</label>
+                            <config>
+                                <type>select</type>
+                                <items>
+                                    <numIndex index="0">
+                                        <numIndex index="0">LLL:EXT:cookies/Resources/Private/Language/locallang.xlf:flexform.action.cookie</numIndex>
+                                        <numIndex index="1">Main->cookie;Main->submit</numIndex>
+                                    </numIndex>
+                                    <numIndex index="1">
+                                        <numIndex index="0">LLL:EXT:cookies/Resources/Private/Language/locallang.xlf:flexform.action.cookieCached</numIndex>
+                                        <numIndex index="1">Main->cookieCached;Main->submit</numIndex>
+                                    </numIndex>
+                                </items>
+                            </config>
+                        </TCEforms>
+                    </switchableControllerActions>
+                    <settings.showPermanent>
+                        <TCEforms>
+                            <label>LLL:EXT:cookies/Resources/Private/Language/locallang.xlf:flexform.showPermanent</label>
+                            <config>
+                                <type>check</type>
+                                <default>1</default>
+                            </config>
+                        </TCEforms>
+                    </settings.showPermanent>
+                    <settings.disable>
+                        <TCEforms>
+                            <label>LLL:EXT:cookies/Resources/Private/Language/locallang.xlf:flexform.disable</label>
+                            <config>
+                                <type>check</type>
+                            </config>
+                        </TCEforms>
+                    </settings.disable>
+                    <settings.disableWarning>
+                        <TCEforms>
+                            <label>LLL:EXT:cookies/Resources/Private/Language/locallang.xlf:flexform.disableWarning</label>
+                            <config>
+                                <type>check</type>
+                                <default>1</default>
+                            </config>
+                        </TCEforms>
+                    </settings.disableWarning>
+                    <settings.pidReadmore>
+                        <TCEforms>
+                            <label>LLL:EXT:cookies/Resources/Private/Language/locallang.xlf:flexform.pidReadmore</label>
+                            <config>
+                                <type>group</type>
+                                <internal_type>db</internal_type>
+                                <allowed>pages</allowed>
+                                <size>1</size>
+                                <maxitems>1</maxitems>
+                            </config>
+                        </TCEforms>
+                    </settings.pidReadmore>
+                    <settings.pidProcess>
+                        <TCEforms>
+                            <label>LLL:EXT:cookies/Resources/Private/Language/locallang.xlf:flexform.pidProcess</label>
+                            <config>
+                                <type>group</type>
+                                <internal_type>db</internal_type>
+                                <allowed>pages</allowed>
+                                <size>1</size>
+                                <maxitems>1</maxitems>
+                            </config>
+                        </TCEforms>
+                    </settings.pidProcess>
+                </el>
+            </ROOT>
+        </sDEF>
+    </sheets>
+</T3DataStructure>

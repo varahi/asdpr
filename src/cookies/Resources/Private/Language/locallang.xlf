@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" product-name="cookies">
+        <header/>
+        <body>
+            <trans-unit id="flexform.action">
+                <source>Type</source>
+            </trans-unit>
+            <trans-unit id="flexform.action.cookie">
+                <source>Uncached (USER_INT)</source>
+            </trans-unit>
+            <trans-unit id="flexform.action.cookieCached">
+                <source>Cached (USER)</source>
+            </trans-unit>
+            <trans-unit id="flexform.showPermanent">
+                <source>Display small button to show cookie hints and settings again</source>
+            </trans-unit>
+            <trans-unit id="flexform.disable">
+                <source>Cookies can be disabled</source>
+            </trans-unit>
+            <trans-unit id="flexform.disableWarning">
+                <source>Show disadvantages of disabling cookies</source>
+            </trans-unit>
+            <trans-unit id="flexform.pidReadmore">
+                <source>Page with more details. Generates a link to this page.</source>
+            </trans-unit>
+            <trans-unit id="flexform.pidProcess">
+                <source>Page for processing the request.</source>
+            </trans-unit>
+            <trans-unit id="cookie.showPermanent">
+                <source>Cookie settings</source>
+            </trans-unit>
+            <trans-unit id="cookie.heading">
+                <source>This website uses cookies</source>
+            </trans-unit>
+            <trans-unit id="cookie.close">
+                <source>Close</source>
+            </trans-unit>
+            <trans-unit id="cookie.hint">
+                <source>This website uses cookies to improve user experience. By using our website you consent to all cookies in accordance with our Cookie Policy.</source>
+            </trans-unit>
+            <trans-unit id="cookie.readmore">
+                <source>Read more</source>
+            </trans-unit>
+            <trans-unit id="cookie.disableWarning">
+                <source><![CDATA[<p>Some cookies on this site are essential, and the site won't work as expected without them. These cookies are set when you submit a form, login or interact with the site by doing something that goes beyond clicking on simple links.</p><p>We also use some non-essential cookies to anonymously track visitors or enhance your experience of the site. If you're not happy with this, we won't set these cookies but some nice features of the site may be unavailable.</p>]]></source>
+            </trans-unit>
+            <trans-unit id="cookie.disable">
+                <source>Cookies are disabled (Ticking this deletes all cookies and sets a new cookie to prevent the creation of further cookies if you hit "ok". This will not store any personal information.)</source>
+            </trans-unit>
+            <trans-unit id="submit">
+                <source>Ok</source>
+            </trans-unit>
+            <trans-unit id="submit.accept">
+                <source>I agree</source>
+            </trans-unit>
+            <trans-unit id="submit.disable">
+                <source>Deactivate cookies</source>
+            </trans-unit>
+            <trans-unit id="submit.enable">
+                <source>Activate cookies</source>
+            </trans-unit>
+            <trans-unit id="flashmessage.disabled.title">
+                <source>Cookies disabled</source>
+            </trans-unit>
+            <trans-unit id="flashmessage.disabled">
+                <source>Cookies have been disabled and all already created cookies have been deleted.</source>
+            </trans-unit>
+            <trans-unit id="flashmessage.enabled.title">
+                <source>Cookies enabled</source>
+            </trans-unit>
+            <trans-unit id="flashmessage.enabled">
+                <source>Cookies have been enabled.</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

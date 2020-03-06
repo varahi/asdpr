@@ -1,0 +1,20 @@
+# Cookie-Hinweis-Texte de - Variante
+plugin.tx_cookies._LOCAL_LANG.de {
+
+    cookie.hint = Um fortfahren zu können, müssen Sie eine Cookie-Auswahl treffen. Nachfolgend erhalten Sie eine Erläuterung der verschiedenen Optionen und ihrer Bedeutung. Wir setzen Google Analytics ein, um Besucher-Informationen wie z.B. Browser, Land, oder die Dauer,
+    submit.hide = Cookies zulassen
+    cookie.disableWarning = <p>Wir verzichten auf den Einsatz von Google Analytics. Es werden jedoch technisch notwendige Cookies gesetzt (schon vor dieser Meldung) Sie können Ihre Cookie-Einstellung jederzeit auf der Seite Datenschutz ändern.</p>
+    submit.disable = Alle Cookies deaktivieren
+    submit.enable = Alle Cookies aktivieren
+}
+
+# Cookie-Hinweis-Texte de - Variante
+plugin.tx_cookies._LOCAL_LANG.fr {
+
+    cookie.hint = Ce site Web utilise des cookies pour améliorer l'expérience utilisateur. En utilisant notre site Web, vous acceptez tous les cookies conformément à notre politique en matière de cookies.
+    submit.hide = Autoriser les cookies
+    cookie.disableWarning = <p>Nous n'utilisons pas Google Analytics. Cependant, des cookies techniquement nécessaires sont définis (avant même ce message). Vous pouvez modifier vos paramètres de cookies à tout moment sur la page de protection des données.</p>
+    submit.disable = Désactiver tous les cookies
+    submit.enable = Activez tous les cookies
+
+}

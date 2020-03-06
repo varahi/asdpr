@@ -29,8 +29,11 @@ plugin.tx_felogin_pi1 {
 
     # Mitteilungen
     _LOCAL_LANG.fr {
-        #ll_welcome_header = An der Website anmelden
+        ll_welcome_header =
+        password = Mot de passe :
+        username = Mot de login :
         #ll_status_header = Möchten Sie sich abmelden?
+        ll_welcome_message = Cette publication est protégée par un mot de passe. Pour la voir, veuillez saisir votre mot de passe ci-dessous :
     }
 
 }

@@ -1,0 +1,47 @@
+2018-10-18 Sven Burkert  <bedienung@sbtheke.de>
+    * Small bugfix for cookie plugin
+
+2018-10-04 Sven Burkert  <bedienung@sbtheke.de>
+    * Set compatibility to TYPO3 9.5
+
+2018-05-17 Sven Burkert  <bedienung@sbtheke.de>
+    * Enhance PHP function to delete more cookies
+
+2018-05-15 Sven Burkert  <bedienung@sbtheke.de>
+    * Enhance documentation with opt-in solution
+    * Rename cookie "tx_cookies_hidden" to "tx_cookies_accepted"
+    * Optimize HTML code
+    * Change TypoScript settings
+
+2017-09-13 Sven Burkert  <bedienung@sbtheke.de>
+    * Optimize JavaScript fallback (link to one page instead of current page, which made problems with EXT:realurl)
+    * Optimize JavaScript code
+    * Remove alternative layout
+    * New configuration option to define expire date of cookies
+    * Change namespace
+    * Set compatibility to TYPO3 8.7
+
+2017-03-29 Sven Burkert  <bedienung@sbtheke.de>
+    * Provide a cached plugin
+
+2017-01-05 Sven Burkert  <bedienung@sbtheke.de>
+    * Set path for cookie to "/"
+
+2016-10-11 Sven Burkert  <bedienung@sbtheke.de>
+    * Changed TypoScript template path to "[...]paths"
+
+2016-10-10 Sven Burkert  <bedienung@sbtheke.de>
+    * Improvements for cookie creation with JavaScript
+
+2016-09-23 Sven Burkert  <bedienung@sbtheke.de>
+    * Set cookie by JavaScript, without reloading the page
+    * Rewrite manual with reStructuredText
+
+2014-09-20 Sven Burkert  <bedienung@sbtheke.de>
+    * Compatibility for TYPO3 6.2 (replace deprecated functions)
+
+2014-09-18 Sven Burkert  <bedienung@sbtheke.de>
+    * Compatibility update for TYPO3 6.2
+
+2014-09-10 Sven Burkert  <bedienung@sbtheke.de>
+    * Initial release

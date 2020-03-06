@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="messages" date="2020-02-08T15:47:58Z">
+	<file source-language="en" datatype="plaintext" original="messages" date="2020-03-06T12:02:49Z">
 		<header>
 			<generator>LFEditor</generator>
 		</header>
@@ -8,8 +8,11 @@
 			<trans-unit id="dateFormat">
 				<source><![CDATA[%m/%d/%Y]]></source>
 			</trans-unit>
-			<trans-unit id="news-back-link">
+			<trans-unit id="news.back-link">
 				<source><![CDATA[Back]]></source>
+			</trans-unit>
+			<trans-unit id="news.next-edit">
+				<source><![CDATA[Next edit]]></source>
 			</trans-unit>
 		</body>
 	</file>
