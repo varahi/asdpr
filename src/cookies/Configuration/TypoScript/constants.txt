@@ -1,0 +1,24 @@
+plugin.tx_cookies {
+    view {
+        # cat=plugin.tx_cookies/file//10; type=string; label=Path to template root (FE)
+        templateRootPath = EXT:cookies/Resources/Private/Templates/
+        # cat=plugin.tx_cookies/file; type=string; label=Path to template partials (FE)
+        partialRootPath = EXT:cookies/Resources/Private/Partials/
+        # cat=plugin.tx_cookies/file; type=string; label=Path to template layouts (FE)
+        layoutRootPath = EXT:cookies/Resources/Private/Layouts/
+    }
+    settings {
+        # cat=plugin.tx_cookies/other//10; type=boolean; label=Permanent:Display small button to show cookie hints and settings again.
+        showPermanent = 1
+        # cat=plugin.tx_cookies/other//20; type=boolean; label=Cookie disabling:Allow disabling of cookies.
+        disable = 1
+        # cat=plugin.tx_cookies/other//30; type=boolean; label=Show warning:Show warning with consequences when deactivating cookies.
+        disableWarning = 1
+        # cat=plugin.tx_cookies/other//40; type=int+; label=Read more page:Page with more details. Generates a link to this page.
+        pidReadmore =
+        # cat=plugin.tx_cookies/other//50; type=int+; label=Page for process:Page for processing the deactivation of cookies and as fallback for browsers without JavaScript. It's highly recommended to set this page, else EXT:realurl generates many entries for speaking urls and you could get problems with cHash.
+        pidProcess = 1
+        # cat=plugin.tx_cookies/other//60; type=int+; label=Cookie expire:Amount of days cookies are valid.
+        expire = 365
+    }
+}

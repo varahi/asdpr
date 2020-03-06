@@ -1,0 +1,30 @@
+plugin.tx_cookies {
+    view {
+        templateRootPaths {
+            0 = EXT:cookies/Resources/Private/Templates/
+            1 = {$plugin.tx_cookies.view.templateRootPath}
+        }
+        partialRootPaths {
+            0 = EXT:cookies/Resources/Private/Partials/
+            1 = {$plugin.tx_cookies.view.partialRootPath}
+        }
+        layoutRootPaths {
+            0 = EXT:cookies/Resources/Private/Layouts/
+            1 = {$plugin.tx_cookies.view.layoutRootPath}
+        }
+    }
+    settings {
+        showPermanent = {$plugin.tx_cookies.settings.showPermanent}
+        disable = {$plugin.tx_cookies.settings.disable}
+        disableWarning = {$plugin.tx_cookies.settings.disableWarning}
+        pidReadmore = {$plugin.tx_cookies.settings.pidReadmore}
+        pidProcess = {$plugin.tx_cookies.settings.pidProcess}
+        expire = {$plugin.tx_cookies.settings.expire}
+    }
+    features {
+        skipDefaultArguments = 1
+    }
+}
+
+page.includeJSFooter.cookies = EXT:cookies/Resources/Public/Js/main.js
+page.includeCSS.cookies = EXT:cookies/Resources/Public/Css/main.css

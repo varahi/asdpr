@@ -1,0 +1,39 @@
+{
+  "name": "sbtheke/cookies",
+  "type": "typo3-cms-extension",
+  "description": "Show cookie hint, optional with possibility to deactivate them. Like ext. cookie_control, but this ext. disables cookies really and additional JavaScript library is not needed.",
+  "homepage": "https://gitlab.com/SBTheke-TYPO3/cookies",
+  "authors": [
+    {
+      "name": "Sven Burkert",
+      "email": "bedienung@sbtheke.de",
+      "role": "Developer",
+      "homepage": "http://www.sbtheke.de"
+    }
+  ],
+  "license": [
+    "GPL-2.0+"
+  ],
+  "support": {
+    "issues": "https://gitlab.com/SBTheke-TYPO3/cookies/issues"
+  },
+  "keywords": [
+    "TYPO3 CMS",
+    "SBTheke",
+    "cookie",
+    "cookies",
+    "DSGVO"
+  ],
+  "version": "5.1.0",
+  "replace": {
+    "cookies": "self.version"
+  },
+  "require": {
+    "typo3/cms-core": ">=7.6.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "SBTheke\\Cookies\\": "Classes"
+    }
+  }
+}

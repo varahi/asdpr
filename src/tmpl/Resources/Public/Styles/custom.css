@@ -64,6 +64,39 @@ p.standard-message {
     text-decoration: none;
 }
 
+/* Cookies */
+#tx_cookies_showPermanent {
+    font-size: 11px;
+}
+#tx_cookies_close {
+    font-size: 11px;
+    margin-top: 20px;
+}
+#tx_cookies {
+    text-align: center !important;
+    margin-top: -20px;
+    font-size: 11px;
+}
+#tx_cookies_inner {
+    background: #EEEEEE;
+}
+#tx_cookies_inner p {
+    margin: 0.7em 3em;
+}
+
+#tx_cookies_hide input[type="submit"] {
+    background: #B80B38;
+    cursor: pointer;
+    padding: 2px 6px;
+    color: #ffffff;
+}
+#tx_cookies_disable input[type="submit"] {
+    background: #F5F5F5;
+    cursor: pointer;
+    padding: 2px 6px;
+    color: #B80B38;
+}
+
 
 /* Footer
 ----------------------------------------------------------------------------------------- */

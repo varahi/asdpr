@@ -1,0 +1,29 @@
+<f:layout name="Default" />
+
+<f:section name="main">
+
+    <div id="tx_cookies">
+        <div id="tx_cookies_inner">
+            <button id="tx_cookies_close" title="{f:translate(key:'cookie.close')}"><f:translate key="cookie.close" /></button>
+            <h3><f:translate key="cookie.heading" /></h3>
+            <p id="tx_cookies_hint"><f:translate key="cookie.hint" /></p>
+            <f:if condition="{settings.pidReadmore}">
+                <p id="tx_cookies_link"><f:link.page pageUid="{settings.pidReadmore}"><f:translate key="cookie.readmore" /></f:link.page></p>
+            </f:if>
+            <f:form pageUid="{settings.pidProcess}" action="submit" method="post" id="tx_cookies_accept" additionalAttributes="{data-expire: settings.expire}">
+                <f:form.hidden name="accept" value="1" />
+                <f:form.submit name="submit" value="{f:translate(key:'submit.accept')}" />
+            </f:form>
+            <f:if condition="{settings.disable}">
+                <f:if condition="{settings.disableWarning}">
+                    <f:format.htmlentitiesDecode><f:translate key="cookie.disableWarning" /></f:format.htmlentitiesDecode>
+                </f:if>
+                <f:form pageUid="{settings.pidProcess}" action="submit" method="post" id="tx_cookies_disable">
+                    <f:form.hidden name="disable" value="1" />
+                    <f:form.submit name="submit" value="{f:translate(key:'submit.disable')}" />
+                </f:form>
+            </f:if>
+        </div>
+    </div>
+
+</f:section>

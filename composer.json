@@ -45,6 +45,7 @@
 		"laxap/bootstrap-grids": "^2.0",
 		"lochmueller/sourceopt": "dev-master",
 		"netresearch/rte-ckeditor-image": "dev-dev-TYPO3_9.x",
+		"sbtheke/cookies": "^5.1",
 		"sgalinski/lfeditor": "^5.0",
 		"t3dev/tmpl": "^1.0.0",
 		"typo3-console/composer-auto-commands": "^0.2.0",

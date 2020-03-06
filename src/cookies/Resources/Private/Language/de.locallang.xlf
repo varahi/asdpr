@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file target-language="de" datatype="plaintext" original="messages" product-name="cookies">
+        <header/>
+        <body>
+            <trans-unit id="flexform.action">
+                <target>Typ</target>
+            </trans-unit>
+            <trans-unit id="flexform.action.cookie">
+                <target>Nicht gecached (USER_INT)</target>
+            </trans-unit>
+            <trans-unit id="flexform.action.cookieCached">
+                <target>Gecached (USER)</target>
+            </trans-unit>
+            <trans-unit id="flexform.showPermanent">
+                <target>Dauerhaft einen kleinen Button anzeigen über den die Cookie Hinweise und Einstellungen wieder angezeigt werden können</target>
+            </trans-unit>
+            <trans-unit id="flexform.disable">
+                <target>Deaktivierung von Cookies erlauben</target>
+            </trans-unit>
+            <trans-unit id="flexform.disableWarning">
+                <target>Warnung anzeigen, welche Nebenwirkungen das Deaktivieren von Cookies hat</target>
+            </trans-unit>
+            <trans-unit id="flexform.pidReadmore">
+                <target>Seite mit mehr Details: Ein Link zu dieser Seite wird erzeugt.</target>
+            </trans-unit>
+            <trans-unit id="flexform.pidProcess">
+                <target>Seite für Verarbeitung der Anfrage.</target>
+            </trans-unit>
+            <trans-unit id="cookie.showPermanent">
+                <target>Cookie Einstellungen</target>
+            </trans-unit>
+            <trans-unit id="cookie.heading">
+                <target>Diese Webseite nutzt Cookies</target>
+            </trans-unit>
+            <trans-unit id="cookie.close">
+                <target>Schließen</target>
+            </trans-unit>
+            <trans-unit id="cookie.hint">
+                <target>Diese Webseite nutzt Cookies zur Verbesserung des Erlebnisses unserer Besucher. Indem Sie weiterhin auf dieser Webseite navigieren, erklären Sie sich mit unserer Verwendung von Cookies einverstanden.</target>
+            </trans-unit>
+            <trans-unit id="cookie.readmore">
+                <target>Mehr</target>
+            </trans-unit>
+            <trans-unit id="cookie.disableWarning">
+                <target><![CDATA[<p>Einige dieser Cookies sind technisch zwingend notwendig, um gewissen Funktionen der Webseite zu gewährleisten.</p><p>Darüber hinaus verwenden wir einige Cookies, die dazu dienen, Informationen über das Benutzerverhalten auf dieser Webseite zu gewinnen und unsere Webseite auf Basis dieser Informationen stetig zu verbessern.</p>]]></target>
+            </trans-unit>
+            <trans-unit id="cookie.disable">
+                <target>Cookies sind deaktiviert (Beim Aktivieren dieser Option werden alle Cookies gelöscht und es wird ein Cookie angelegt, der Ihre Einstellungen speichert. Es werden keine persönlichen Informationen gespeichert.)</target>
+            </trans-unit>
+            <trans-unit id="submit">
+                <target>Ok</target>
+            </trans-unit>
+            <trans-unit id="submit.accept">
+                <target>Ich bin damit einverstanden</target>
+            </trans-unit>
+            <trans-unit id="submit.disable">
+                <target>Cookies deaktivieren</target>
+            </trans-unit>
+            <trans-unit id="submit.enable">
+                <target>Cookies aktivieren</target>
+            </trans-unit>
+            <trans-unit id="flashmessage.disabled.title">
+                <target>Cookies deaktiviert</target>
+            </trans-unit>
+            <trans-unit id="flashmessage.disabled">
+                <target>Cookies wurden deaktiviert, alle bereits angelegten Cookies wurden gelöscht.</target>
+            </trans-unit>
+            <trans-unit id="flashmessage.enabled.title">
+                <target>Cookies aktiviert</target>
+            </trans-unit>
+            <trans-unit id="flashmessage.enabled">
+                <target>Cookies wurden aktiviert.</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
