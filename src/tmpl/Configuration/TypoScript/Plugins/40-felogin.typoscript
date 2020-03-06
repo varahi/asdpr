@@ -1,0 +1,36 @@
+plugin.tx_felogin_pi1 {
+
+    #templateFile = fileadmin/Resources/Private/Templates/felogin_template.html
+
+    # Ordner mit FE-Benutzern
+    storagePid = 14
+
+    # Weiterleitungen
+    redirectMode = login,logout
+    redirectFirstMethod = 0
+    #redirectPageLogin = 8
+    #redirectPageLoginError = 9
+    #redirectPageLogout = 9
+    redirectDisable = 0
+
+    showLogoutFormAfterLogin = 0
+    showForgotPasswordLink = 1
+
+    welcomeHeader_stdWrap.wrap = <h3 class="standard-message">|</h3>
+    welcomeMessage_stdWrap.wrap = <p class="standard-message">|</p>
+    successHeader_stdWrap.wrap = <h3 class="standard-message">|</h3>
+    successMessage_stdWrap.wrap = <p class="standard-message">|</p>
+    logoutHeader_stdWrap.wrap = <h3 class="standard-message">|</h3>
+    logoutMessage_stdWrap.wrap = <p class="standard-message">|</p>
+    errorHeader_stdWrap.wrap = <h3 class="error-message">|</h3>
+    errorMessage_stdWrap.wrap = <p class="error-message">|</p>
+    forgotHeader_stdWrap.wrap = <h3 class="standard-message">|</h3>
+    forgotMessage_stdWrap.wrap = <p class="standard-message">|</p>
+
+    # Mitteilungen
+    _LOCAL_LANG.fr {
+        #ll_welcome_header = An der Website anmelden
+        #ll_status_header = Möchten Sie sich abmelden?
+    }
+
+}

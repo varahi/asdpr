@@ -13,9 +13,6 @@ page {
         20_css_file11 = EXT:tmpl/Resources/Public/Styles/theme.css
         20_css_file11.media = all
 
-        30_css_file12 = EXT:tmpl/Resources/Public/Styles/sm-clean/css.css
-        30_css_file12.media = all
-
         40_css_file13 = EXT:tmpl/Resources/Public/Styles/style.css
         40_css_file13.media = all
 

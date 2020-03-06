@@ -28,6 +28,24 @@ h1 {
     margin-bottom: 8px;
 }
 
+p.error-message {
+    color: #ff0000;
+}
+h3.standard-message {
+    font-size: 18px;
+}
+p.standard-message {
+    font-size: 16px;
+}
+.tx-felogin-pi1 form fieldset legend {
+    display: none;
+}
+.tx-felogin-pi1 input[type="text"],
+.tx-felogin-pi1 input[type="password"]{
+    margin-bottom: 10px;
+}
+
+/*
 .tx-felogin-pi1 form fieldset {
     border: none;
 }
@@ -37,3 +55,4 @@ h1 {
 .tx-felogin-pi1 > div {
     display: none;
 }
+*/
