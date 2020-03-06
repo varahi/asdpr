@@ -20,6 +20,9 @@
     padding-left: 3em;
     padding-right: 3em;
 }
+.blue-background {
+    background-color: #aadaf8;
+}
 
 h1 {
     color: #222;
