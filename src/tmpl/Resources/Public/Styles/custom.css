@@ -1,10 +1,20 @@
+/* Header
+----------------------------------------------------------------------------------------- */
+
+.site-branding-text {
+    color: #fff;
+    font-size: 18px;
+}
 .panel-image {
     background-attachment: fixed;
 }
-.mail-link {
-    font-size: 0;
-}
 
+/* Content
+----------------------------------------------------------------------------------------- */
+
+.content-area a {
+    text-decoration: underline;
+}
 .container {
     max-width: 1000px;
     padding-left: 3em;
@@ -24,10 +34,7 @@ h1 {
     padding: 1.5em 0 0;
 }
 
-#pass {
-    margin-bottom: 8px;
-}
-
+/* Login form */
 p.error-message {
     color: #ff0000;
 }
@@ -40,19 +47,19 @@ p.standard-message {
 .tx-felogin-pi1 form fieldset legend {
     display: none;
 }
-.tx-felogin-pi1 input[type="text"],
-.tx-felogin-pi1 input[type="password"]{
-    margin-bottom: 10px;
-}
-
-/*
 .tx-felogin-pi1 form fieldset {
     border: none;
 }
-.tx-felogin-pi1 form fieldset legend {
-    display: none;
+
+.tx-felogin-pi1 input[type="text"],
+.tx-felogin-pi1 input[type="password"]{
+    margin-bottom: 15px;
 }
-.tx-felogin-pi1 > div {
-    display: none;
+
+
+/* Footer
+----------------------------------------------------------------------------------------- */
+.mail-link {
+    font-size: 0;
 }
-*/
+

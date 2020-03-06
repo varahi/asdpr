@@ -4,11 +4,8 @@ lib.pagetitle {
     10 = TEXT
     10 {
         wrap = <p class="site-branding-text">|<p>
-        //data = levelfield : -1 , page_title, slide
         data = page : page_title
         //data = levelfield : -1 , page_title , slide
-        //value = asdasd, leveluid:-1, slide
-        //data = page : page_title, slide
     }
     20 = TEXT
     20 {
