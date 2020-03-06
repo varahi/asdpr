@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" target-language="fr" datatype="plaintext" original="messages" date="2020-03-06T12:02:49Z">
+		<header>
+			<generator>LFEditor</generator>
+		</header>
+		<body>
+			<trans-unit id="news.back-link" approved="yes">
+				<source><![CDATA[Back]]></source>
+				<target><![CDATA[retour]]></target>
+			</trans-unit>
+			<trans-unit id="news.next-edit" approved="yes">
+				<source><![CDATA[Next edit]]></source>
+				<target><![CDATA[Prochain édito :]]></target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
