@@ -59,6 +59,11 @@ p.standard-message {
     margin-bottom: 15px;
 }
 
+/* News */
+.content-area .news  h2.entry-title a {
+    text-decoration: none;
+}
+
 
 /* Footer
 ----------------------------------------------------------------------------------------- */
