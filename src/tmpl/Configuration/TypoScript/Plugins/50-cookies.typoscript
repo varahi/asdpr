@@ -16,5 +16,7 @@ plugin.tx_cookies._LOCAL_LANG.fr {
     cookie.disableWarning = <p>Nous n'utilisons pas Google Analytics. Cependant, des cookies techniquement nécessaires sont définis (avant même ce message). Vous pouvez modifier vos paramètres de cookies à tout moment sur la page de protection des données.</p>
     submit.disable = Désactiver tous les cookies
     submit.enable = Activez tous les cookies
+    cookie.heading = Ce site utilise les cookies
+    submit.accept = je suis d'accord
 
 }
