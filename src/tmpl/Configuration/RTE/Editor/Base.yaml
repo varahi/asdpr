@@ -7,8 +7,8 @@ editor:
     #contentsCss: "/assets/src/css/rte.css"
     # will be overridden by the record (if a language is set)
 
-    defaultContentLanguage: "de"
-    defaultLanguage: "de"
+    defaultContentLanguage: "en"
+    defaultLanguage: "en"
     # Allow any class or any data attribute in any tag
     extraAllowedContent: "*(*)[data-*]"
     height: 300
