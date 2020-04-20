@@ -11,11 +11,15 @@ CREATE TABLE tt_content (
   is_last smallint(5) unsigned DEFAULT '0' NOT NULL,
 );
 
-
 #
 # Table structure for table 'pages'
 #
 CREATE TABLE pages (
 	page_title varchar(100) DEFAULT '' NOT NULL,
 	page_description text,
+);
+
+# additional fields for news
+CREATE TABLE tx_news_domain_model_news (
+    display_date date DEFAULT NULL,
 );

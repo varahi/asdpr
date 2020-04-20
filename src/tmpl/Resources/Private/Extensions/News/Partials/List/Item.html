@@ -11,13 +11,6 @@
 	<!-- footer information -->
 	<div class="news-meta-info">
 		<p>
-			<!-- date -->
-			<span class="news-list-date">
-				<time itemprop="datePublished" datetime="{f:format.date(date:newsItem.datetime, format:'Y-m-d')}">
-					<f:format.date format="{f:translate(key:'dateFormat')}">{newsItem.datetime}</f:format.date>
-				</time>
-			</span>
-
 			<f:if condition="{newsItem.firstCategory}">
 				<!-- first category -->
 				<span class="news-list-category">{newsItem.firstCategory.title}</span>
@@ -71,6 +64,14 @@
 		</f:then>
 	</f:if>
 
+	<!-- date -->
+	<f:if condition="{newsItem.displayDate}">
+				<span class="news-list-date">
+					<time itemprop="datePublished" datetime="{f:format.date(date:newsItem.displayDate, format:'Y-m-d')}">
+						<f:format.date format="{f:translate(key:'dateFormat')}">{newsItem.displayDate}</f:format.date>
+					</time>
+				</span>
+	</f:if>
 
 	<!-- teaser -->
 	<div class="teaser-text">
@@ -85,11 +86,12 @@
 		</f:if>
 		</n:removeMediaTags>
 
-		<f:if condition="{newsItem.archive}">
-			<f:translate key="news.next-edit" extensionName="tmpl" /> <f:format.date format="%B %Y">{newsItem.archive}</f:format.date>
-		</f:if>
+		<f:comment>
+			<f:if condition="{newsItem.archive}">
+				<f:translate key="news.next-edit" extensionName="tmpl" /> <f:format.date format="%B %Y">{newsItem.archive}</f:format.date>
+			</f:if>
+		</f:comment>
+
 	</div>
-
-
 </div>
 </html>

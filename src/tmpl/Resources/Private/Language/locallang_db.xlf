@@ -131,6 +131,10 @@
 			<trans-unit id="page.page_description">
 				<source><![CDATA[Page description]]></source>
 			</trans-unit>
+			<trans-unit id="tx_tmpl_domain_model_news.display_date">
+				<source><![CDATA[Display date]]></source>
+			</trans-unit>
+
 
 		</body>
 	</file>
