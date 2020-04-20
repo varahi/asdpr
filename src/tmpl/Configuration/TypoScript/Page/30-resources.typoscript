@@ -3,10 +3,6 @@ page {
     # Css
     includeCSS {
 
-
-    <script type="text/javascript" src="js/jquery_002.js"></script>
-    <script type="text/javascript" src="js/jquery-migrate.js"></script>
-
         10_css_file10 = EXT:tmpl/Resources/Public/Styles/style_002.css
         10_css_file10.media = all
 
@@ -79,7 +75,7 @@ page {
         js_file_50 = EXT:tmpl/Resources/Public/Javascript/skip-link-focus-fix.js
         js_file_60 = EXT:tmpl/Resources/Public/Javascript/navigation.js
         js_file_70 = EXT:tmpl/Resources/Public/Javascript/global.js
-        #js_file14 = EXT:tmpl/Resources/Public/Javascript/jquery.js
+        js_file_70_custom = EXT:tmpl/Resources/Public/Javascript/custom.js
 
         #js_file4 = http://api-maps.yandex.ru/1.1/index.xml?key=AHo-NEwBAAAAnlf3HQIAo0uILcx8SxdcH09EYYFMjMT8OVQAAAAAAAAAAABU7ABfndalW9DMJOwTze18Ywt9uQ==
         #js_file5 = EXT:tmpl/Resources/Public/Javascript/yandexMap.js
