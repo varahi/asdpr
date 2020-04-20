@@ -91,7 +91,13 @@
 				<f:translate key="news.next-edit" extensionName="tmpl" /> <f:format.date format="%B %Y">{newsItem.archive}</f:format.date>
 			</f:if>
 		</f:comment>
-
 	</div>
+
+	<div class="news-more-link">
+		<n:link newsItem="{newsItem}" settings="{settings}" class="more" title="{newsItem.title}">
+			<f:translate key="news.moreLink" extensionName="tmpl" />
+		</n:link>
+	</div>
+
 </div>
 </html>
