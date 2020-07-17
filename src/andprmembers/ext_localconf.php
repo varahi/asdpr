@@ -10,14 +10,12 @@ call_user_func(
             'Andprmembers',
             [
                 'User' => 'list, show, new, create, edit, update, delete',
-                'Tgi' => 'list, show',
-                'Appeal' => 'list, show'
+                'Location' => 'list, show'
             ],
             // non-cacheable actions
             [
                 'User' => 'create, update, delete',
-                'Tgi' => '',
-                'Appeal' => ''
+                'Location' => ''
             ]
         );
 

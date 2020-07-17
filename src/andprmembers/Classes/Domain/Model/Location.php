@@ -13,15 +13,16 @@ namespace T3Dev\Andprmembers\Domain\Model;
  *
  ***/
 /**
- * Appeal
+ * Location
  */
-class Appeal extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
+class Location extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 {
 
     /**
      * name
      * 
      * @var string
+     * @TYPO3\CMS\Extbase\Annotation\Validate("NotEmpty")
      */
     protected $name = '';
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="EXT:andprmembers/Resources/Private/Language/locallang_db" date="2020-07-17T11:51:16Z" product-name="andprmembers">
+	<file source-language="en" datatype="plaintext" original="EXT:andprmembers/Resources/Private/Language/locallang_db" date="2020-07-17T14:20:45Z" product-name="andprmembers">
 		<header/>
 		<body>
 			<trans-unit id="tx_andprmembers_domain_model_user" resname="tx_andprmembers_domain_model_user">
@@ -30,22 +30,13 @@
 			<trans-unit id="fe_users.tx_extbase_type.Tx_Andprmembers_User" resname="fe_users.tx_extbase_type.Tx_Andprmembers_User">
 				<source>andprmembers User</source>
 			</trans-unit>
-			<trans-unit id="tx_andprmembers_domain_model_tgi" resname="tx_andprmembers_domain_model_tgi">
-				<source>Tgi</source>
+			<trans-unit id="tx_andprmembers_domain_model_location" resname="tx_andprmembers_domain_model_location">
+				<source>Location</source>
 			</trans-unit>
-			<trans-unit id="tx_andprmembers_domain_model_tgi.name" resname="tx_andprmembers_domain_model_tgi.name">
+			<trans-unit id="tx_andprmembers_domain_model_location.name" resname="tx_andprmembers_domain_model_location.name">
 				<source>Name</source>
 			</trans-unit>
-			<trans-unit id="tx_andprmembers_domain_model_tgi.description" resname="tx_andprmembers_domain_model_tgi.description">
-				<source>Description</source>
-			</trans-unit>
-			<trans-unit id="tx_andprmembers_domain_model_appeal" resname="tx_andprmembers_domain_model_appeal">
-				<source>Appeal</source>
-			</trans-unit>
-			<trans-unit id="tx_andprmembers_domain_model_appeal.name" resname="tx_andprmembers_domain_model_appeal.name">
-				<source>Name</source>
-			</trans-unit>
-			<trans-unit id="tx_andprmembers_domain_model_appeal.description" resname="tx_andprmembers_domain_model_appeal.description">
+			<trans-unit id="tx_andprmembers_domain_model_location.description" resname="tx_andprmembers_domain_model_location.description">
 				<source>Description</source>
 			</trans-unit>
 			<trans-unit id="tx_andprmembers_andprmembers.name" resname="tx_andprmembers_andprmembers.name">
@@ -53,6 +44,9 @@
 			</trans-unit>
 			<trans-unit id="tx_andprmembers_andprmembers.description" resname="tx_andprmembers_andprmembers.description">
 				<source></source>
+			</trans-unit>
+			<trans-unit id="tx_andprmembers.additional_fields" resname="tx_andprmembers.additional_fields">
+				<source>Additional fields</source>
 			</trans-unit>
 		</body>
 	</file>

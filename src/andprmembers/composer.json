@@ -1,13 +1,14 @@
 {
     "name": "t3dev/andprmembers",
     "type": "typo3-cms-extension",
-    "description": "",
+    "description": "Annuaries Memberes De L'ANDPR",
     "authors": [
         {
             "name": "Dmitry Vasilev",
             "role": "Developer"
         }
     ],
+	"version": "1.0.0",
     "require": {
         "typo3/cms-core": "^9.5"
     },

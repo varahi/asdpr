@@ -1,7 +1,7 @@
 <?php
 return [
     'ctrl' => [
-        'title' => 'LLL:EXT:andprmembers/Resources/Private/Language/locallang_db.xlf:tx_andprmembers_domain_model_tgi',
+        'title' => 'LLL:EXT:andprmembers/Resources/Private/Language/locallang_db.xlf:tx_andprmembers_domain_model_location',
         'label' => 'name',
         'tstamp' => 'tstamp',
         'crdate' => 'crdate',
@@ -18,7 +18,7 @@ return [
             'endtime' => 'endtime',
         ],
         'searchFields' => 'name,description',
-        'iconfile' => 'EXT:andprmembers/Resources/Public/Icons/tx_andprmembers_domain_model_tgi.gif'
+        'iconfile' => 'EXT:andprmembers/Resources/Public/Icons/tx_andprmembers_domain_model_location.gif'
     ],
     'interface' => [
         'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, name, description',
@@ -55,8 +55,8 @@ return [
                 'items' => [
                     ['', 0],
                 ],
-                'foreign_table' => 'tx_andprmembers_domain_model_tgi',
-                'foreign_table_where' => 'AND {#tx_andprmembers_domain_model_tgi}.{#pid}=###CURRENT_PID### AND {#tx_andprmembers_domain_model_tgi}.{#sys_language_uid} IN (-1,0)',
+                'foreign_table' => 'tx_andprmembers_domain_model_location',
+                'foreign_table_where' => 'AND {#tx_andprmembers_domain_model_location}.{#pid}=###CURRENT_PID### AND {#tx_andprmembers_domain_model_location}.{#sys_language_uid} IN (-1,0)',
             ],
         ],
         'l10n_diffsource' => [
@@ -119,16 +119,16 @@ return [
 
         'name' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:andprmembers/Resources/Private/Language/locallang_db.xlf:tx_andprmembers_domain_model_tgi.name',
+            'label' => 'LLL:EXT:andprmembers/Resources/Private/Language/locallang_db.xlf:tx_andprmembers_domain_model_location.name',
             'config' => [
                 'type' => 'input',
                 'size' => 30,
-                'eval' => 'trim'
+                'eval' => 'trim,required'
             ],
         ],
         'description' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:andprmembers/Resources/Private/Language/locallang_db.xlf:tx_andprmembers_domain_model_tgi.description',
+            'label' => 'LLL:EXT:andprmembers/Resources/Private/Language/locallang_db.xlf:tx_andprmembers_domain_model_location.description',
             'config' => [
                 'type' => 'text',
                 'cols' => 40,
