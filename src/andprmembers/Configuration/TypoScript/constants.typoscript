@@ -1,0 +1,15 @@
+
+plugin.tx_andprmembers_andprmembers {
+    view {
+        # cat=plugin.tx_andprmembers_andprmembers/file; type=string; label=Path to template root (FE)
+        templateRootPath = EXT:andprmembers/Resources/Private/Templates/
+        # cat=plugin.tx_andprmembers_andprmembers/file; type=string; label=Path to template partials (FE)
+        partialRootPath = EXT:andprmembers/Resources/Private/Partials/
+        # cat=plugin.tx_andprmembers_andprmembers/file; type=string; label=Path to template layouts (FE)
+        layoutRootPath = EXT:andprmembers/Resources/Private/Layouts/
+    }
+    persistence {
+        # cat=plugin.tx_andprmembers_andprmembers//a; type=string; label=Default storage PID
+        storagePid =
+    }
+}

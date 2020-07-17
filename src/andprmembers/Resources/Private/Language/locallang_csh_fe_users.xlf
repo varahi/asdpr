@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="EXT:andprmembers/Resources/Private/Language/locallang_csh" date="2020-07-17T11:51:16Z" product-name="andprmembers">
+		<header/>
+		<body>
+			<trans-unit id="first_name.description" resname="first_name.description">
+				<source>firstName</source>
+			</trans-unit>
+			<trans-unit id="last_name.description" resname="last_name.description">
+				<source>lastName</source>
+			</trans-unit>
+			<trans-unit id="email.description" resname="email.description">
+				<source>email</source>
+			</trans-unit>
+			<trans-unit id="note.description" resname="note.description">
+				<source>note</source>
+			</trans-unit>
+			<trans-unit id="contribution.description" resname="contribution.description">
+				<source>contribution</source>
+			</trans-unit>
+			<trans-unit id="tgi.description" resname="tgi.description">
+				<source>tgi</source>
+			</trans-unit>
+			<trans-unit id="appeal.description" resname="appeal.description">
+				<source>appeal</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

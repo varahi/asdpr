@@ -1,0 +1,28 @@
+{
+    "name": "t3dev/andprmembers",
+    "type": "typo3-cms-extension",
+    "description": "",
+    "authors": [
+        {
+            "name": "Dmitry Vasilev",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "typo3/cms-core": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "T3Dev\\Andprmembers\\": "Classes"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "T3Dev\\Andprmembers\\Tests\\": "Tests"
+        }
+    },
+    "replace": {
+        "t3dev/andprmembers": "self.version",
+        "typo3-ter/andprmembers": "self.version"
+    }
+}

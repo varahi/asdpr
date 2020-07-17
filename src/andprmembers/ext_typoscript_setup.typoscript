@@ -1,0 +1,21 @@
+
+config.tx_extbase {
+  persistence {
+    classes {
+
+      TYPO3\CMS\Extbase\Domain\Model\FrontendUser {
+        subclasses {
+          Tx_Andprmembers_User = T3Dev\Andprmembers\Domain\Model\User
+          
+        }
+      }
+      T3Dev\Andprmembers\Domain\Model\User {
+        mapping {
+          tableName = fe_users
+          recordType = Tx_Andprmembers_User
+        }
+      }
+
+    }
+  }
+}

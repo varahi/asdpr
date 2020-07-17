@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="EXT:andprmembers/Resources/Private/Language/locallang_db" date="2020-07-17T11:51:16Z" product-name="andprmembers">
+		<header/>
+		<body>
+			<trans-unit id="tx_andprmembers_domain_model_user" resname="tx_andprmembers_domain_model_user">
+				<source>User</source>
+			</trans-unit>
+			<trans-unit id="tx_andprmembers_domain_model_user.first_name" resname="tx_andprmembers_domain_model_user.first_name">
+				<source>First Name</source>
+			</trans-unit>
+			<trans-unit id="tx_andprmembers_domain_model_user.last_name" resname="tx_andprmembers_domain_model_user.last_name">
+				<source>Last Name</source>
+			</trans-unit>
+			<trans-unit id="tx_andprmembers_domain_model_user.email" resname="tx_andprmembers_domain_model_user.email">
+				<source>Email</source>
+			</trans-unit>
+			<trans-unit id="tx_andprmembers_domain_model_user.note" resname="tx_andprmembers_domain_model_user.note">
+				<source>Note</source>
+			</trans-unit>
+			<trans-unit id="tx_andprmembers_domain_model_user.contribution" resname="tx_andprmembers_domain_model_user.contribution">
+				<source>Contribution</source>
+			</trans-unit>
+			<trans-unit id="tx_andprmembers_domain_model_user.tgi" resname="tx_andprmembers_domain_model_user.tgi">
+				<source>Tgi</source>
+			</trans-unit>
+			<trans-unit id="tx_andprmembers_domain_model_user.appeal" resname="tx_andprmembers_domain_model_user.appeal">
+				<source>Appeal</source>
+			</trans-unit>
+			<trans-unit id="fe_users.tx_extbase_type.Tx_Andprmembers_User" resname="fe_users.tx_extbase_type.Tx_Andprmembers_User">
+				<source>andprmembers User</source>
+			</trans-unit>
+			<trans-unit id="tx_andprmembers_domain_model_tgi" resname="tx_andprmembers_domain_model_tgi">
+				<source>Tgi</source>
+			</trans-unit>
+			<trans-unit id="tx_andprmembers_domain_model_tgi.name" resname="tx_andprmembers_domain_model_tgi.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_andprmembers_domain_model_tgi.description" resname="tx_andprmembers_domain_model_tgi.description">
+				<source>Description</source>
+			</trans-unit>
+			<trans-unit id="tx_andprmembers_domain_model_appeal" resname="tx_andprmembers_domain_model_appeal">
+				<source>Appeal</source>
+			</trans-unit>
+			<trans-unit id="tx_andprmembers_domain_model_appeal.name" resname="tx_andprmembers_domain_model_appeal.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_andprmembers_domain_model_appeal.description" resname="tx_andprmembers_domain_model_appeal.description">
+				<source>Description</source>
+			</trans-unit>
+			<trans-unit id="tx_andprmembers_andprmembers.name" resname="tx_andprmembers_andprmembers.name">
+				<source>andprmembers</source>
+			</trans-unit>
+			<trans-unit id="tx_andprmembers_andprmembers.description" resname="tx_andprmembers_andprmembers.description">
+				<source></source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
