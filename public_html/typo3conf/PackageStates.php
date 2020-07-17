@@ -101,14 +101,11 @@ return [
         'viewpage' => [
             'packagePath' => 'typo3/sysext/viewpage/',
         ],
-        'gridelements' => [
-            'packagePath' => 'typo3conf/ext/gridelements/',
-        ],
-        'bootstrap_grids' => [
-            'packagePath' => 'typo3conf/ext/bootstrap_grids/',
-        ],
         'rte_ckeditor_image' => [
             'packagePath' => 'typo3conf/ext/rte_ckeditor_image/',
+        ],
+        'andprmembers' => [
+            'packagePath' => 'typo3conf/ext/andprmembers/',
         ],
         'cookies' => [
             'packagePath' => 'typo3conf/ext/cookies/',
@@ -128,8 +125,11 @@ return [
         'news' => [
             'packagePath' => 'typo3conf/ext/news/',
         ],
-        'staticfilecache' => [
-            'packagePath' => 'typo3conf/ext/staticfilecache/',
+        'sourceopt' => [
+            'packagePath' => 'typo3conf/ext/sourceopt/',
+        ],
+        'test' => [
+            'packagePath' => 'typo3conf/ext/test/',
         ],
         'tmpl' => [
             'packagePath' => 'typo3conf/ext/tmpl/',
