@@ -5,9 +5,10 @@
 
     <f:flashMessages />
 
-    <table  class="tx_andprmembers" >
+    <table  class="tx_andprmembers table table-dark" >
+        <thead>
         <tr>
-            <th><f:translate key="tx_andprmembers.uid" /></th>
+            <th><f:translate key="tx_andprmembers.number" /></th>
             <th><f:translate key="tx_andprmembers_domain_model_user.last_name" /></th>
             <th><f:translate key="tx_andprmembers_domain_model_user.first_name" /></th>
             <th><f:translate key="tx_andprmembers_domain_model_user.email" /></th>
@@ -20,9 +21,8 @@
                 <th> </th>
                 <th> </th>
             </f:comment>
-
         </tr>
-
+        </thead>
         <f:for each="{users}" as="user">
             <tr>
                 <td>ASDPR {user.uid}</td>

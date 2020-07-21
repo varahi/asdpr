@@ -36,6 +36,15 @@
 			<trans-unit id="tx_andprmembers_domain_model_location.description" resname="tx_andprmembers_domain_model_location.description">
 				<source>Description</source>
 			</trans-unit>
+			<trans-unit id="tx_andprmembers.number" resname="tx_andprmembers.number">
+				<source>Number</source>
+			</trans-unit>
+			<trans-unit id="tx_andprmembers.tgi" resname="tx_andprmembers.tgi">
+				<source>TGI</source>
+			</trans-unit>
+			<trans-unit id="tx_andprmembers.appeal" resname="tx_andprmembers.appeal">
+				<source>Appeal</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>
