@@ -5,43 +5,62 @@
 
     <f:flashMessages />
 
-    <table  class="tx_andprmembers table table-dark" >
-        <thead>
-        <tr>
-            <th><f:translate key="tx_andprmembers.number" /></th>
-            <th><f:translate key="tx_andprmembers_domain_model_user.last_name" /></th>
-            <th><f:translate key="tx_andprmembers_domain_model_user.first_name" /></th>
-            <th><f:translate key="tx_andprmembers_domain_model_user.email" /></th>
-            <th><f:translate key="tx_andprmembers.tgi" /></th>
-            <th><f:translate key="tx_andprmembers.appeal" /></th>
-            <th><f:translate key="tx_andprmembers_domain_model_user.note" /></th>
-            <th><f:translate key="tx_andprmembers_domain_model_user.contribution" /></th>
+    <f:if condition="{users}">
+        <f:then>
+            <f:widget.paginate objects="{users}" as="paginatedUsers" configuration="{settings.list.pagination}">
 
-            <f:comment>
-                <th> </th>
-                <th> </th>
-            </f:comment>
-        </tr>
-        </thead>
-        <f:for each="{users}" as="user">
-            <tr>
-                <td>ASDPR {user.uid}</td>
-                <td>{user.firstName}</td>
-                <td>{user.lastName}</td>
-                <td>{user.email}</td>
-                <td>{user.tgi.name}</td>
-                <td>{user.appeal.name}</td>
-                <td>{user.note}</td>
-                <td>{user.contribution}</td>
+                <table  class="tx_andprmembers table" id="sort-table">
+                    <thead>
+                    <tr>
+                        <th><f:translate key="tx_andprmembers.number" /></th>
+                        <th><f:translate key="tx_andprmembers_domain_model_user.last_name" /></th>
+                        <th><f:translate key="tx_andprmembers_domain_model_user.first_name" /></th>
+                        <th><f:translate key="tx_andprmembers_domain_model_user.email" /></th>
+                        <th><f:translate key="tx_andprmembers.tgi" /></th>
+                        <th><f:translate key="tx_andprmembers.appeal" /></th>
+                        <th><f:translate key="tx_andprmembers_domain_model_user.note" /></th>
+                        <th><f:translate key="tx_andprmembers_domain_model_user.contribution" /></th>
 
-                <f:comment>
-                    <td><f:link.action action="edit" arguments="{user : user}">Edit</f:link.action></td>
-                    <td><f:link.action action="delete" arguments="{user : user}">Delete</f:link.action></td>
-                </f:comment>
+                        <f:comment>
+                            <th> </th>
+                            <th> </th>
+                        </f:comment>
+                    </tr>
+                    </thead>
+                    <f:for each="{paginatedUsers}" as="user">
+                        <tr>
+                            <td>ASDPR {user.uid}</td>
+                            <td>{user.firstName}</td>
+                            <td>{user.lastName}</td>
+                            <td>{user.email}</td>
+                            <td>{user.tgi.name}</td>
+                            <td>{user.appeal.name}</td>
+                            <td>{user.note}</td>
+                            <td>{user.contribution}</td>
 
-            </tr>
-        </f:for>
-    </table>
+                            <f:comment>
+                                <td><f:link.action action="edit" arguments="{user : user}">Edit</f:link.action></td>
+                                <td><f:link.action action="delete" arguments="{user : user}">Delete</f:link.action></td>
+                            </f:comment>
+
+                        </tr>
+                    </f:for>
+                </table>
+
+            </f:widget.paginate>
+        </f:then>
+        <f:else>
+            There is no item records
+        </f:else>
+    </f:if>
+
+
+
+    <script>
+        $(document).ready(function () {
+            $('#sort-table').DataTable();
+        });
+    </script>
 
 </f:section>
 </html>
