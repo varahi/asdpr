@@ -53,6 +53,36 @@ routeEnhancers:
         start: '1'
         end: '100'
 
+  AndprmembersPlugin:
+    type: Extbase
+    extension: Andprmembers
+    plugin: Andprmembers
+    routes:
+      -
+        routePath: '/detail/{user_name}'
+        _controller: 'User::show'
+        _arguments:
+          user_name: user
+      -
+        routePath: '/list/page/{page}'
+        _controller: 'User::list'
+        _arguments:
+          page: '@widget_0/currentPage'
+    defaultController: 'User::list'
+    defaults:
+      page: '0'
+    requirements:
+      page: \d+
+    aspects:
+      user_name:
+        type: PersistedAliasMapper
+        tableName: fe_users
+        routeFieldName: path_segment
+      page:
+        type: StaticRangeMapper
+        start: '1'
+        end: '100'
+
 routes:
   -
     route: sitemap.xml
