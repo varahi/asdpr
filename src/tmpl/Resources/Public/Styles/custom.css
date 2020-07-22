@@ -108,4 +108,12 @@ p.standard-message {
 .mail-link {
     font-size: 0;
 }
-
+.tx_andprmembers {
+    font-size: 14px;
+}
+#sort-table_length {
+    display: none;
+}
+#sort-table_filter > label {
+    display: none;
+}
