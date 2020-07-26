@@ -56,13 +56,23 @@ class UserController extends AbstractController
      */
     public function listAction()
     {
+
         $this->loadSources();
-        $users = $this->userRepository->findAll();
+
+        if(!empty($_POST['tx_andprmembers_andprmembers']['searchText'])) {
+
+            $boolOrderingASC = true;
+            $searchText = $_POST['tx_andprmembers_andprmembers']['searchText'];
+            $users = $this->userRepository->findByFields($searchText, $boolOrderingASC);
+
+        } else {
+            $users = $this->userRepository->findAll();
+        }
         $this->view->assign('users', $users);
 
         //$itemsPerPage = $this->settings['list']['pagibation']['itemsPerPage'];
         //$this->view->assign('itemsPerPage', $itemsPerPage);
-        //\TYPO3\CMS\Core\Utility\DebugUtility::debug($settings);
+        //\TYPO3\CMS\Core\Utility\DebugUtility::debug($searchText);
     }
 
     /**

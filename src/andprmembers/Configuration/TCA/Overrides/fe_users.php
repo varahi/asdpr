@@ -1,6 +1,8 @@
 <?php
 defined('TYPO3_MODE') || die();
 
+$languageFile = 'LLL:EXT:andprmembers/Resources/Private/Language/locallang_db.xlf:';
+
 $tmp_andprmembers_columns = [
 
     'note' => [
@@ -9,10 +11,11 @@ $tmp_andprmembers_columns = [
         'config' => [
             'type' => 'text',
             'cols' => 40,
-            'rows' => 15,
+            'rows' => 5,
             'eval' => 'trim'
         ]
     ],
+    /*
     'contribution' => [
         'exclude' => true,
         'label' => 'LLL:EXT:andprmembers/Resources/Private/Language/locallang_db.xlf:tx_andprmembers_domain_model_user.contribution',
@@ -22,6 +25,22 @@ $tmp_andprmembers_columns = [
             'eval' => 'trim'
         ],
     ],
+    */
+
+    'contribution' => [
+        'exclude' => true,
+        'label' => 'LLL:EXT:andprmembers/Resources/Private/Language/locallang_db.xlf:tx_andprmembers_domain_model_user.contribution',
+        'config' => [
+            //'type' => 'radio',
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'items' => [
+                [$languageFile . 'tx_andprmembers.contribution_uptodate', '1'],
+                [$languageFile . 'tx_andprmembers.contribution_late', '2']
+            ],
+        ]
+    ],
+
     'tgi' => [
         'exclude' => true,
         'label' => 'LLL:EXT:andprmembers/Resources/Private/Language/locallang_db.xlf:tx_andprmembers_domain_model_user.tgi',

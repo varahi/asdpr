@@ -48,6 +48,12 @@
 			<trans-unit id="tx_andprmembers.additional_fields" resname="tx_andprmembers.additional_fields">
 				<source>Additional fields</source>
 			</trans-unit>
+			<trans-unit id="tx_andprmembers.contribution_uptodate" >
+				<source>Up to date</source>
+			</trans-unit>
+			<trans-unit id="tx_andprmembers.contribution_late" >
+				<source>Late</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>
