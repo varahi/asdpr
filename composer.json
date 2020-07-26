@@ -47,6 +47,7 @@
 		"netresearch/rte-ckeditor-image": "dev-dev-TYPO3_9.x",
 		"sbtheke/cookies": "^5.1",
 		"sgalinski/lfeditor": "^5.0",
+		"t3dev/andprmembers": "^1.0",
 		"t3dev/tmpl": "^1.0.0",
 		"typo3-console/composer-auto-commands": "^0.2.0",
 		"typo3/cms-about": "^9.5",
@@ -81,7 +82,7 @@
 		"typo3/cms-tstemplate": "^9.5",
 		"typo3/cms-viewpage": "^9.5",
 		"typo3/minimal": "^9.5",
-		"t3dev/andprmembers": "^1.0"
+		"undefined/translate-locallang": "^2.7"
 	},
 	"require-dev": {
 		"friendsofphp/php-cs-fixer": "2.14.0",

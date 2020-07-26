@@ -111,9 +111,15 @@ p.standard-message {
 .tx_andprmembers {
     font-size: 14px;
 }
+
+/*
 #sort-table_length {
     display: none;
 }
 #sort-table_filter > label {
     display: none;
 }
+#sort-table_info,
+#sort-table_paginate {
+    display: none;
+}*/

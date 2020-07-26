@@ -101,6 +101,12 @@ return [
         'viewpage' => [
             'packagePath' => 'typo3/sysext/viewpage/',
         ],
+        'gridelements' => [
+            'packagePath' => 'typo3conf/ext/gridelements/',
+        ],
+        'bootstrap_grids' => [
+            'packagePath' => 'typo3conf/ext/bootstrap_grids/',
+        ],
         'rte_ckeditor_image' => [
             'packagePath' => 'typo3conf/ext/rte_ckeditor_image/',
         ],
@@ -133,6 +139,9 @@ return [
         ],
         'tmpl' => [
             'packagePath' => 'typo3conf/ext/tmpl/',
+        ],
+        'translate_locallang' => [
+            'packagePath' => 'typo3conf/ext/translate_locallang/',
         ],
         'vhs' => [
             'packagePath' => 'typo3conf/ext/vhs/',
