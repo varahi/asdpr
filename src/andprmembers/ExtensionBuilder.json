@@ -121,8 +121,8 @@
         {
             "config": {
                 "position": [
-                    575,
-                    109
+                    510,
+                    115
                 ]
             },
             "name": "New Model Object",
@@ -135,7 +135,7 @@
                     "_default4_delete": false,
                     "customActions": []
                 },
-                "name": "Tgi",
+                "name": "Location",
                 "objectsettings": {
                     "addDeletedField": true,
                     "addHiddenField": true,
@@ -147,7 +147,7 @@
                     "parentClass": "",
                     "sorting": true,
                     "type": "Entity",
-                    "uid": "100803381332"
+                    "uid": "1410314443124"
                 },
                 "propertyGroup": {
                     "properties": [
@@ -157,10 +157,10 @@
                             "propertyDescription": "",
                             "propertyIsExcludeField": true,
                             "propertyIsL10nModeExclude": false,
-                            "propertyIsRequired": false,
+                            "propertyIsRequired": true,
                             "propertyName": "name",
                             "propertyType": "String",
-                            "uid": "1530956760352"
+                            "uid": "1554191580490"
                         },
                         {
                             "allowedFileTypes": "",
@@ -171,69 +171,7 @@
                             "propertyIsRequired": false,
                             "propertyName": "description",
                             "propertyType": "Text",
-                            "uid": "1245950763333"
-                        }
-                    ]
-                },
-                "relationGroup": {
-                    "relations": []
-                }
-            }
-        },
-        {
-            "config": {
-                "position": [
-                    917,
-                    165
-                ]
-            },
-            "name": "New Model Object",
-            "value": {
-                "actionGroup": {
-                    "_default0_list": true,
-                    "_default1_show": true,
-                    "_default2_new_create": false,
-                    "_default3_edit_update": false,
-                    "_default4_delete": false,
-                    "customActions": []
-                },
-                "name": "Appeal",
-                "objectsettings": {
-                    "addDeletedField": true,
-                    "addHiddenField": true,
-                    "addStarttimeEndtimeFields": true,
-                    "aggregateRoot": true,
-                    "categorizable": false,
-                    "description": "",
-                    "mapToTable": "",
-                    "parentClass": "",
-                    "sorting": true,
-                    "type": "Entity",
-                    "uid": "383363139644"
-                },
-                "propertyGroup": {
-                    "properties": [
-                        {
-                            "allowedFileTypes": "",
-                            "maxItems": "1",
-                            "propertyDescription": "",
-                            "propertyIsExcludeField": true,
-                            "propertyIsL10nModeExclude": false,
-                            "propertyIsRequired": false,
-                            "propertyName": "name",
-                            "propertyType": "String",
-                            "uid": "1100217975496"
-                        },
-                        {
-                            "allowedFileTypes": "",
-                            "maxItems": "1",
-                            "propertyDescription": "",
-                            "propertyIsExcludeField": true,
-                            "propertyIsL10nModeExclude": false,
-                            "propertyIsRequired": false,
-                            "propertyName": "description",
-                            "propertyType": "Text",
-                            "uid": "283715733094"
+                            "uid": "77763397240"
                         }
                     ]
                 },
@@ -260,8 +198,8 @@
         },
         "extensionKey": "andprmembers",
         "name": "andprmembers",
-        "originalExtensionKey": "",
-        "originalVendorName": "",
+        "originalExtensionKey": "andprmembers",
+        "originalVendorName": "T3Dev",
         "persons": [
             {
                 "company": "",
@@ -294,7 +232,7 @@
             "tgt": {
                 "moduleId": 1,
                 "terminal": "SOURCES",
-                "uid": "100803381332"
+                "uid": "1410314443124"
             }
         },
         {
@@ -304,15 +242,15 @@
                 "uid": "941043799235"
             },
             "tgt": {
-                "moduleId": 2,
+                "moduleId": 1,
                 "terminal": "SOURCES",
-                "uid": "383363139644"
+                "uid": "1410314443124"
             }
         }
     ],
-    "storagePath": "\/app\/web\/public_html\/typo3conf\/ext\/",
+    "storagePath": "\/app\/web\/src\/",
     "log": {
-        "last_modified": "2020-07-17 11:51",
+        "last_modified": "2020-07-17 02:20",
         "extension_builder_version": "9.10.3",
         "be_user": " (1)"
     }

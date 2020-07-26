@@ -2,6 +2,9 @@
 namespace T3Dev\Andprmembers\Controller;
 
 
+use TYPO3\CMS\Core\Utility\GeneralUtility;
+use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
+
 /***
  *
  * This file is part of the "andprmembers" Extension for TYPO3 CMS.
@@ -15,12 +18,12 @@ namespace T3Dev\Andprmembers\Controller;
 /**
  * UserController
  */
-class UserController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
+class UserController extends AbstractController
 {
 
     /**
      * userRepository
-     * 
+     *
      * @var \T3Dev\Andprmembers\Domain\Repository\UserRepository
      */
     protected $userRepository = null;
@@ -34,19 +37,47 @@ class UserController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
     }
 
     /**
+     * Load JS Libraries and Code
+     */
+    private function loadSources()
+    {
+
+        /** @var \TYPO3\CMS\Core\Page\PageRenderer $pageRenderer */
+        $pageRenderer = GeneralUtility::makeInstance(\TYPO3\CMS\Core\Page\PageRenderer::class);
+        $extRelPath = ExtensionManagementUtility::siteRelPath('andprmembers');
+        $pageRenderer->addJsFile($extRelPath . "Resources/Public/Javascript/jquery.dataTables.js", 'text/javascript', false, false, '', true);
+        $pageRenderer->addCssFile($extRelPath . "Resources/Public/Css/datatables.css", 'stylesheet', 'all', '', true);
+    }
+
+    /**
      * action list
-     * 
+     *
      * @return void
      */
     public function listAction()
     {
-        $users = $this->userRepository->findAll();
+
+        $this->loadSources();
+
+        if(!empty($_POST['tx_andprmembers_andprmembers']['searchText'])) {
+
+            $boolOrderingASC = true;
+            $searchText = $_POST['tx_andprmembers_andprmembers']['searchText'];
+            $users = $this->userRepository->findByFields($searchText, $boolOrderingASC);
+
+        } else {
+            $users = $this->userRepository->findAll();
+        }
         $this->view->assign('users', $users);
+
+        //$itemsPerPage = $this->settings['list']['pagibation']['itemsPerPage'];
+        //$this->view->assign('itemsPerPage', $itemsPerPage);
+        //\TYPO3\CMS\Core\Utility\DebugUtility::debug($searchText);
     }
 
     /**
      * action show
-     * 
+     *
      * @param \T3Dev\Andprmembers\Domain\Model\User $user
      * @return void
      */
@@ -57,7 +88,7 @@ class UserController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
 
     /**
      * action new
-     * 
+     *
      * @return void
      */
     public function newAction()
@@ -66,7 +97,7 @@ class UserController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
 
     /**
      * action create
-     * 
+     *
      * @param \T3Dev\Andprmembers\Domain\Model\User $newUser
      * @return void
      */
@@ -79,7 +110,7 @@ class UserController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
 
     /**
      * action edit
-     * 
+     *
      * @param \T3Dev\Andprmembers\Domain\Model\User $user
      * @ignorevalidation $user
      * @return void
@@ -91,7 +122,7 @@ class UserController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
 
     /**
      * action update
-     * 
+     *
      * @param \T3Dev\Andprmembers\Domain\Model\User $user
      * @return void
      */
@@ -104,7 +135,7 @@ class UserController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
 
     /**
      * action delete
-     * 
+     *
      * @param \T3Dev\Andprmembers\Domain\Model\User $user
      * @return void
      */

@@ -56,14 +56,14 @@ class User extends \TYPO3\CMS\Extbase\Domain\Model\FrontendUser
     /**
      * tgi
      * 
-     * @var \T3Dev\Andprmembers\Domain\Model\Tgi
+     * @var \T3Dev\Andprmembers\Domain\Model\Location
      */
     protected $tgi = null;
 
     /**
      * appeal
      * 
-     * @var \T3Dev\Andprmembers\Domain\Model\Appeal
+     * @var \T3Dev\Andprmembers\Domain\Model\Location
      */
     protected $appeal = null;
 
@@ -175,7 +175,7 @@ class User extends \TYPO3\CMS\Extbase\Domain\Model\FrontendUser
     /**
      * Returns the tgi
      * 
-     * @return \T3Dev\Andprmembers\Domain\Model\Tgi $tgi
+     * @return \T3Dev\Andprmembers\Domain\Model\Location tgi
      */
     public function getTgi()
     {
@@ -185,10 +185,10 @@ class User extends \TYPO3\CMS\Extbase\Domain\Model\FrontendUser
     /**
      * Sets the tgi
      * 
-     * @param \T3Dev\Andprmembers\Domain\Model\Tgi $tgi
+     * @param \T3Dev\Andprmembers\Domain\Model\Location $tgi
      * @return void
      */
-    public function setTgi(\T3Dev\Andprmembers\Domain\Model\Tgi $tgi)
+    public function setTgi(\T3Dev\Andprmembers\Domain\Model\Location $tgi)
     {
         $this->tgi = $tgi;
     }
@@ -196,7 +196,7 @@ class User extends \TYPO3\CMS\Extbase\Domain\Model\FrontendUser
     /**
      * Returns the appeal
      * 
-     * @return \T3Dev\Andprmembers\Domain\Model\Appeal $appeal
+     * @return \T3Dev\Andprmembers\Domain\Model\Location appeal
      */
     public function getAppeal()
     {
@@ -206,10 +206,10 @@ class User extends \TYPO3\CMS\Extbase\Domain\Model\FrontendUser
     /**
      * Sets the appeal
      * 
-     * @param \T3Dev\Andprmembers\Domain\Model\Appeal $appeal
+     * @param \T3Dev\Andprmembers\Domain\Model\Location $appeal
      * @return void
      */
-    public function setAppeal(\T3Dev\Andprmembers\Domain\Model\Appeal $appeal)
+    public function setAppeal(\T3Dev\Andprmembers\Domain\Model\Location $appeal)
     {
         $this->appeal = $appeal;
     }

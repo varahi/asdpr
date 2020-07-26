@@ -10,6 +10,6 @@ plugin.tx_andprmembers_andprmembers {
     }
     persistence {
         # cat=plugin.tx_andprmembers_andprmembers//a; type=string; label=Default storage PID
-        storagePid =
+        storagePid = 14
     }
 }

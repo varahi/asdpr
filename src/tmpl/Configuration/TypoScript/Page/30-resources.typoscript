@@ -30,38 +30,12 @@ page {
         #css_file22.media = print
     }
 
-    # Scss
-    includeCSS {
-        #css_file1_bootstrap_reboot = EXT:tmpl/Resources/Public/Scss/bootstrap/bootstrap-reboot.scss
-        #css_file1_bootstrap_reboot.outputdir = EXT:tmpl/Resources/Public/Css/
-
-        #css_file2_bootstrap_grid = EXT:tmpl/Resources/Public/Scss/bootstrap/bootstrap-grid.scss
-        #css_file2_bootstrap_grid.outputdir = EXT:tmpl/Resources/Public/Css/
-
-        #css_file3_bootstrap_flex = EXT:tmpl/Resources/Public/Scss/bootstrap/bootstrap-flex.scss
-        #css_file3_bootstrap_flex.outputdir = EXT:tmpl/Resources/Public/Css/
-
-        #css_file5_bootstrap = EXT:tmpl/Resources/Public/Scss/bootstrap/bootstrap.scss
-        #css_file5_bootstrap.outputdir = EXT:tmpl/Resources/Public/CompiledCss/
-
-        #css_file100_style = EXT:tmpl/Resources/Public/Scss/style.scss
-        #css_file100_style.outputdir = EXT:tmpl/Resources/Public/CompiledCss/
-
-        # Css
-        #css_file99 = EXT:tmpl/Resources/Public/Styles/mailform.css
-        #css_file101 = EXT:tmpl/Resources/Public/Styles/style.css
-        #css_file102 = EXT:tmpl/Resources/Public/Styles/menu.css
-        #css_file103 = EXT:tmpl/Resources/Public/Styles/media_queries.css
-
-
-        #200_custom_css = EXT:tmpl/Resources/Public/Css/custom.css
-    }
-
     # Js to header
     includeJSLibs {
         js_file_jquery = EXT:tmpl/Resources/Public/Javascript/jquery/jquery-2.1.1.min.js
 
-        js_file_10 = EXT:tmpl/Resources/Public/Javascript/jquery_002.js
+        # @todo what do this script?
+        #js_file_10 = EXT:tmpl/Resources/Public/Javascript/jquery_002.js
         js_file_20  = EXT:tmpl/Resources/Public/Javascript/jquery-migrate.js
 
         js_file_30  = EXT:tmpl/Resources/Public/Javascript/html5.js
@@ -77,11 +51,6 @@ page {
         js_file_70 = EXT:tmpl/Resources/Public/Javascript/global.js
         js_file_70_custom = EXT:tmpl/Resources/Public/Javascript/custom.js
 
-        #js_file4 = http://api-maps.yandex.ru/1.1/index.xml?key=AHo-NEwBAAAAnlf3HQIAo0uILcx8SxdcH09EYYFMjMT8OVQAAAAAAAAAAABU7ABfndalW9DMJOwTze18Ywt9uQ==
-        #js_file5 = EXT:tmpl/Resources/Public/Javascript/yandexMap.js
-
-        #js_file10 = EXT:tmpl/Resources/Public/Javascript/jquery.mmenu.all.min.js
-        #js_file11 = EXT:tmpl/Resources/Public/Javascript/main.js
     }
 
 }

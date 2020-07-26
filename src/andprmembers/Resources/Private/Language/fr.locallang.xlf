@@ -1,55 +1,72 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="messages" date="2020-07-23T16:03:20Z" product-name="andprmembers">
+	<file source-language="en" target-language="fr" datatype="plaintext" original="messages" date="2020-07-23T16:03:20Z" product-name="andprmembers">
 		<header/>
 		<body>
 			<trans-unit id="tx_andprmembers_domain_model_user">
 				<source>User</source>
+				<target></target>
 			</trans-unit>
 			<trans-unit id="tx_andprmembers_domain_model_user.first_name">
 				<source>First Name</source>
+				<target>Prénom</target>
 			</trans-unit>
 			<trans-unit id="tx_andprmembers_domain_model_user.last_name">
 				<source>Last Name</source>
+				<target>Nom</target>
 			</trans-unit>
 			<trans-unit id="tx_andprmembers_domain_model_user.email">
 				<source>Email</source>
+				<target>Courriel</target>
 			</trans-unit>
 			<trans-unit id="tx_andprmembers_domain_model_user.note">
 				<source>Note</source>
+				<target>Observations</target>
 			</trans-unit>
 			<trans-unit id="tx_andprmembers_domain_model_user.contribution">
 				<source>Contribution</source>
+				<target></target>
 			</trans-unit>
 			<trans-unit id="tx_andprmembers_domain_model_user.tgi">
 				<source>Tgi</source>
+				<target>TGI</target>
 			</trans-unit>
 			<trans-unit id="tx_andprmembers_domain_model_user.appeal">
 				<source>Appeal</source>
+				<target>Cour d'Appel</target>
 			</trans-unit>
 			<trans-unit id="tx_andprmembers_domain_model_location">
 				<source>Location</source>
+				<target></target>
 			</trans-unit>
 			<trans-unit id="tx_andprmembers_domain_model_location.name">
 				<source>Name</source>
+				<target></target>
 			</trans-unit>
 			<trans-unit id="tx_andprmembers_domain_model_location.description">
 				<source>Description</source>
+				<target></target>
 			</trans-unit>
 			<trans-unit id="tx_andprmembers.number">
 				<source>Number</source>
+				<target>Adhérent </target>
 			</trans-unit>
 			<trans-unit id="tx_andprmembers.tgi">
 				<source>TGI</source>
+				<target></target>
 			</trans-unit>
 			<trans-unit id="tx_andprmembers.appeal">
 				<source>Appeal</source>
+				<target>Cour d'Appel</target>
 			</trans-unit>
 			<trans-unit id="tx_andprmembers.ok">
 				<source>Ok</source>
+				<target>Ok</target>
 			</trans-unit>
 			<trans-unit id="tx_andprmembers_domain_model_user.membership_fee">
 				<source>Membership fee</source>
+				<target>Cotisasion
+</target>
 			</trans-unit>
 		</body>
 	</file>

@@ -110,6 +110,9 @@ return [
         'rte_ckeditor_image' => [
             'packagePath' => 'typo3conf/ext/rte_ckeditor_image/',
         ],
+        'andprmembers' => [
+            'packagePath' => 'typo3conf/ext/andprmembers/',
+        ],
         'cookies' => [
             'packagePath' => 'typo3conf/ext/cookies/',
         ],
@@ -128,11 +131,17 @@ return [
         'news' => [
             'packagePath' => 'typo3conf/ext/news/',
         ],
-        'staticfilecache' => [
-            'packagePath' => 'typo3conf/ext/staticfilecache/',
+        'sourceopt' => [
+            'packagePath' => 'typo3conf/ext/sourceopt/',
+        ],
+        'test' => [
+            'packagePath' => 'typo3conf/ext/test/',
         ],
         'tmpl' => [
             'packagePath' => 'typo3conf/ext/tmpl/',
+        ],
+        'translate_locallang' => [
+            'packagePath' => 'typo3conf/ext/translate_locallang/',
         ],
         'vhs' => [
             'packagePath' => 'typo3conf/ext/vhs/',

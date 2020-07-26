@@ -1,0 +1,12 @@
+plugin.tx_andprmembers {
+  settings {
+    list {
+      pagination {
+        itemsPerPage = 5
+        insertAbove = 0
+        insertBelow = 1
+        maximumNumberOfLinks = 10
+      }
+    }
+  }
+}

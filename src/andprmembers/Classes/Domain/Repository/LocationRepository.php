@@ -13,9 +13,9 @@ namespace T3Dev\Andprmembers\Domain\Repository;
  *
  ***/
 /**
- * The repository for Tgis
+ * The repository for Locations
  */
-class TgiRepository extends \TYPO3\CMS\Extbase\Persistence\Repository
+class LocationRepository extends \TYPO3\CMS\Extbase\Persistence\Repository
 {
 
     /**

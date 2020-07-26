@@ -152,7 +152,7 @@ class UserTest extends \TYPO3\TestingFramework\Core\Unit\UnitTestCase
     /**
      * @test
      */
-    public function getTgiReturnsInitialValueForTgi()
+    public function getTgiReturnsInitialValueForLocation()
     {
         self::assertEquals(
             null,
@@ -163,9 +163,9 @@ class UserTest extends \TYPO3\TestingFramework\Core\Unit\UnitTestCase
     /**
      * @test
      */
-    public function setTgiForTgiSetsTgi()
+    public function setTgiForLocationSetsTgi()
     {
-        $tgiFixture = new \T3Dev\Andprmembers\Domain\Model\Tgi();
+        $tgiFixture = new \T3Dev\Andprmembers\Domain\Model\Location();
         $this->subject->setTgi($tgiFixture);
 
         self::assertAttributeEquals(
@@ -178,7 +178,7 @@ class UserTest extends \TYPO3\TestingFramework\Core\Unit\UnitTestCase
     /**
      * @test
      */
-    public function getAppealReturnsInitialValueForAppeal()
+    public function getAppealReturnsInitialValueForLocation()
     {
         self::assertEquals(
             null,
@@ -189,9 +189,9 @@ class UserTest extends \TYPO3\TestingFramework\Core\Unit\UnitTestCase
     /**
      * @test
      */
-    public function setAppealForAppealSetsAppeal()
+    public function setAppealForLocationSetsAppeal()
     {
-        $appealFixture = new \T3Dev\Andprmembers\Domain\Model\Appeal();
+        $appealFixture = new \T3Dev\Andprmembers\Domain\Model\Location();
         $this->subject->setAppeal($appealFixture);
 
         self::assertAttributeEquals(
