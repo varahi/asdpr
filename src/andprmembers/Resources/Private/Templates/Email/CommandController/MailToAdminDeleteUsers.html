@@ -1,0 +1,13 @@
+<f:layout name="Email" />
+<f:section name="main">
+
+    <p>The following users are deleted:</p>
+
+    <f:for each="{users}" as="user">
+        Number - {user.uid} <br />
+        Name - {user.firstName} {user.lastName}<br />
+        Email - {user.email}<br />
+        <hr />
+    </f:for>
+
+</f:section>

@@ -9,6 +9,7 @@ use TYPO3\CMS\Core\Utility\GeneralUtility;
 use T3Dev\Andprmembers\Domain\Repository\UserRepository;
 use TYPO3\CMS\Extbase\Configuration\BackendConfigurationManager;
 use TYPO3\CMS\Extbase\Configuration\ConfigurationManagerInterface;
+use TYPO3\CMS\Extbase\Persistence\Generic\PersistenceManager;
 
 /**
  * Class AbstractImportCommand
@@ -23,6 +24,12 @@ abstract class AbstractCommand extends Command
      */
     protected $userRepository = null;
 
+    /**
+     * PersistenceManager
+     *
+     * @var \TYPO3\CMS\Extbase\Persistence\Generic\PersistenceManager
+     */
+    protected $persistenceManager;
 
     /**
      * Initialize the controller.
@@ -30,6 +37,8 @@ abstract class AbstractCommand extends Command
     protected function initializeCommand()
     {
         $this->userRepository = ObjectUtility::getObjectManager()->get(UserRepository::class);
+        $this->persistenceManager = ObjectUtility::getObjectManager()->get(PersistenceManager::class);
+
         $configurationManager = ObjectUtility::getConfigurationManager(BackendConfigurationManager::class);
         $this->configuration = $configurationManager->getConfiguration(ConfigurationManagerInterface::CONFIGURATION_TYPE_FULL_TYPOSCRIPT, 'andprmembers');
     }
@@ -53,6 +62,8 @@ abstract class AbstractCommand extends Command
                     'userPid' => 0,
                     'receiver' => 'reciever@asdpr.dyndns.org',
                     'sender' => 'sender@asdpr.dyndns.org',
+                    'deadlinePayTimeOne' => '15/02',
+                    'deadlinePayTimeTwo' => '28/02'
                 );
             }
             $this->configuration = $configuration;

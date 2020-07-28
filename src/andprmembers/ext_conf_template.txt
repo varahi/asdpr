@@ -7,4 +7,10 @@ reciever = reciever@asdpr.dyndns.org
 # cat=email/enable; type=string; label=Sender
 sender = sender@asdpr.dyndns.org
 
+# cat=time/enable; type=string; label=Deadlne time for pay one (m/d)
+deadlinePayTimeOne = 15/02
+
+# cat=time/enable; type=string; label=Deadlne time for pay two (m/d)
+deadlinePayTimeTwo = 28/02
+
 
