@@ -1,7 +1,6 @@
 <?php
 namespace T3Dev\Andprmembers\Controller;
 
-
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 
@@ -56,15 +55,12 @@ class UserController extends AbstractController
      */
     public function listAction()
     {
-
         $this->loadSources();
 
-        if(!empty($_POST['tx_andprmembers_andprmembers']['searchText'])) {
-
+        if (!empty($_POST['tx_andprmembers_andprmembers']['searchText'])) {
             $boolOrderingASC = true;
             $searchText = $_POST['tx_andprmembers_andprmembers']['searchText'];
             $users = $this->userRepository->findByFields($searchText, $boolOrderingASC);
-
         } else {
             $users = $this->userRepository->findAll();
         }

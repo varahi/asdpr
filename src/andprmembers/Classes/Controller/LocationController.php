@@ -1,7 +1,6 @@
 <?php
 namespace T3Dev\Andprmembers\Controller;
 
-
 /***
  *
  * This file is part of the "andprmembers" Extension for TYPO3 CMS.
@@ -20,7 +19,7 @@ class LocationController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControl
 
     /**
      * locationRepository
-     * 
+     *
      * @var \T3Dev\Andprmembers\Domain\Repository\LocationRepository
      */
     protected $locationRepository = null;
@@ -35,7 +34,7 @@ class LocationController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControl
 
     /**
      * action list
-     * 
+     *
      * @return void
      */
     public function listAction()
@@ -46,7 +45,7 @@ class LocationController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControl
 
     /**
      * action show
-     * 
+     *
      * @param \T3Dev\Andprmembers\Domain\Model\Location $location
      * @return void
      */

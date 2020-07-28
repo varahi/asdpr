@@ -14,5 +14,9 @@ plugin.tx_andprmembers {
       toEmailAddress = sender@asdpr.dyndns.org
     }
 
+    users {
+      contributionLateId = 2
+    }
+
   }
 }

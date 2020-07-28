@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'andprmembers:user' => [
-        'class' => \T3Dev\Andprmembers\Command\UserCommandController::class,
+    'andprmembers:sendemail' => [
+        'class' => \T3Dev\Andprmembers\Command\SendEmailCommandController::class,
         'schedulable' => true
     ],
 ];

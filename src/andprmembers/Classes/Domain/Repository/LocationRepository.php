@@ -1,7 +1,6 @@
 <?php
 namespace T3Dev\Andprmembers\Domain\Repository;
 
-
 /***
  *
  * This file is part of the "andprmembers" Extension for TYPO3 CMS.

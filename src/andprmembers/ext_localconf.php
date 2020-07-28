@@ -2,9 +2,7 @@
 defined('TYPO3_MODE') || die('Access denied.');
 
 call_user_func(
-    function()
-    {
-
+    function () {
         \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
             'T3Dev.Andprmembers',
             'Andprmembers',
@@ -38,13 +36,12 @@ call_user_func(
                 }
            }'
         );
-		$iconRegistry = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Imaging\IconRegistry::class);
-		
-			$iconRegistry->registerIcon(
-				'andprmembers-plugin-andprmembers',
-				\TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
-				['source' => 'EXT:andprmembers/Resources/Public/Icons/user_plugin_andprmembers.svg']
-			);
-		
+        $iconRegistry = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Imaging\IconRegistry::class);
+        
+        $iconRegistry->registerIcon(
+            'andprmembers-plugin-andprmembers',
+            \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
+            ['source' => 'EXT:andprmembers/Resources/Public/Icons/user_plugin_andprmembers.svg']
+        );
     }
 );

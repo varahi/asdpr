@@ -55,5 +55,4 @@ abstract class AbstractController extends ActionController
         $uri = $uriBuilder->setTargetPageUid($pageUid)->setTargetPageType(0)->build();
         $this->redirectToURI($uri, $delay=0, $statusCode=200);
     }
-
 }

@@ -2,6 +2,7 @@
 namespace T3Dev\Andprmembers\Domain\Repository;
 
 use TYPO3\CMS\Extbase\Persistence\Generic\Typo3QuerySettings;
+
 /***
  *
  * This file is part of the "andprmembers" Extension for TYPO3 CMS.
@@ -59,5 +60,4 @@ class UserRepository extends \TYPO3\CMS\Extbase\Persistence\Repository
         }
         return $query->execute();
     }
-
 }

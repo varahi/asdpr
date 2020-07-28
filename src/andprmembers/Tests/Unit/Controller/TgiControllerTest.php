@@ -32,7 +32,6 @@ class TgiControllerTest extends \TYPO3\TestingFramework\Core\Unit\UnitTestCase
      */
     public function listActionFetchesAllTgisFromRepositoryAndAssignsThemToView()
     {
-
         $allTgis = $this->getMockBuilder(\TYPO3\CMS\Extbase\Persistence\ObjectStorage::class)
             ->disableOriginalConstructor()
             ->getMock();

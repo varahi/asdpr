@@ -23,6 +23,7 @@ abstract class AbstractCommand extends Command
      */
     protected $userRepository = null;
 
+
     /**
      * Initialize the controller.
      */
@@ -59,4 +60,31 @@ abstract class AbstractCommand extends Command
         return $this->configuration;
     }
 
+    /**
+     * Initializes a TypoScript Frontend necessary for using TypoScript and TypoLink functions
+     *
+     * @param int $id
+     * @param int $typeNum
+     */
+    protected function initTSFE($id = 1, $typeNum = 0)
+    {
+        \TYPO3\CMS\Frontend\Utility\EidUtility::initTCA();
+        if (!is_object($GLOBALS['TT'])) {
+            $GLOBALS['TT'] = new \TYPO3\CMS\Core\TimeTracker\TimeTracker;
+            $GLOBALS['TT']->start();
+        }
+
+        $GLOBALS['TSFE'] = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance('TYPO3\\CMS\\Frontend\\Controller\\TypoScriptFrontendController', $GLOBALS['TYPO3_CONF_VARS'], $id, $typeNum);
+        $GLOBALS['TSFE']->sys_page = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance('TYPO3\\CMS\\Frontend\\Page\\PageRepository');
+        $GLOBALS['TSFE']->sys_page->init(true);
+        $GLOBALS['TSFE']->connectToDB();
+        $GLOBALS['TSFE']->initFEuser();
+        $GLOBALS['TSFE']->determineId();
+        $GLOBALS['TSFE']->initTemplate();
+        $GLOBALS['TSFE']->rootLine = $GLOBALS['TSFE']->sys_page->getRootLine($id, '');
+        $GLOBALS['TSFE']->getConfigArray();
+
+        //\STZ\Wta\Utility\LocalizationUtility::resetExtensionLangCache('wta');
+        //$GLOBALS['BE_USER']->uc['lang'] = 'fr';
+    }
 }

@@ -32,7 +32,6 @@ class LocationControllerTest extends \TYPO3\TestingFramework\Core\Unit\UnitTestC
      */
     public function listActionFetchesAllLocationsFromRepositoryAndAssignsThemToView()
     {
-
         $allLocations = $this->getMockBuilder(\TYPO3\CMS\Extbase\Persistence\ObjectStorage::class)
             ->disableOriginalConstructor()
             ->getMock();

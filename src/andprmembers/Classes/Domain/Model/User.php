@@ -1,7 +1,6 @@
 <?php
 namespace T3Dev\Andprmembers\Domain\Model;
 
-
 /***
  *
  * This file is part of the "andprmembers" Extension for TYPO3 CMS.
@@ -20,56 +19,56 @@ class User extends \TYPO3\CMS\Extbase\Domain\Model\FrontendUser
 
     /**
      * firstName
-     * 
+     *
      * @var string
      */
     protected $firstName = '';
 
     /**
      * lastName
-     * 
+     *
      * @var string
      */
     protected $lastName = '';
 
     /**
      * email
-     * 
+     *
      * @var string
      */
     protected $email = '';
 
     /**
      * note
-     * 
+     *
      * @var string
      */
     protected $note = '';
 
     /**
      * contribution
-     * 
+     *
      * @var string
      */
     protected $contribution = '';
 
     /**
      * tgi
-     * 
+     *
      * @var \T3Dev\Andprmembers\Domain\Model\Location
      */
     protected $tgi = null;
 
     /**
      * appeal
-     * 
+     *
      * @var \T3Dev\Andprmembers\Domain\Model\Location
      */
     protected $appeal = null;
 
     /**
      * Returns the firstName
-     * 
+     *
      * @return string $firstName
      */
     public function getFirstName()
@@ -79,7 +78,7 @@ class User extends \TYPO3\CMS\Extbase\Domain\Model\FrontendUser
 
     /**
      * Sets the firstName
-     * 
+     *
      * @param string $firstName
      * @return void
      */
@@ -90,7 +89,7 @@ class User extends \TYPO3\CMS\Extbase\Domain\Model\FrontendUser
 
     /**
      * Returns the lastName
-     * 
+     *
      * @return string $lastName
      */
     public function getLastName()
@@ -100,7 +99,7 @@ class User extends \TYPO3\CMS\Extbase\Domain\Model\FrontendUser
 
     /**
      * Sets the lastName
-     * 
+     *
      * @param string $lastName
      * @return void
      */
@@ -111,7 +110,7 @@ class User extends \TYPO3\CMS\Extbase\Domain\Model\FrontendUser
 
     /**
      * Returns the email
-     * 
+     *
      * @return string $email
      */
     public function getEmail()
@@ -121,7 +120,7 @@ class User extends \TYPO3\CMS\Extbase\Domain\Model\FrontendUser
 
     /**
      * Sets the email
-     * 
+     *
      * @param string $email
      * @return void
      */
@@ -132,7 +131,7 @@ class User extends \TYPO3\CMS\Extbase\Domain\Model\FrontendUser
 
     /**
      * Returns the note
-     * 
+     *
      * @return string $note
      */
     public function getNote()
@@ -142,7 +141,7 @@ class User extends \TYPO3\CMS\Extbase\Domain\Model\FrontendUser
 
     /**
      * Sets the note
-     * 
+     *
      * @param string $note
      * @return void
      */
@@ -153,7 +152,7 @@ class User extends \TYPO3\CMS\Extbase\Domain\Model\FrontendUser
 
     /**
      * Returns the contribution
-     * 
+     *
      * @return string $contribution
      */
     public function getContribution()
@@ -163,7 +162,7 @@ class User extends \TYPO3\CMS\Extbase\Domain\Model\FrontendUser
 
     /**
      * Sets the contribution
-     * 
+     *
      * @param string $contribution
      * @return void
      */
@@ -174,7 +173,7 @@ class User extends \TYPO3\CMS\Extbase\Domain\Model\FrontendUser
 
     /**
      * Returns the tgi
-     * 
+     *
      * @return \T3Dev\Andprmembers\Domain\Model\Location tgi
      */
     public function getTgi()
@@ -184,7 +183,7 @@ class User extends \TYPO3\CMS\Extbase\Domain\Model\FrontendUser
 
     /**
      * Sets the tgi
-     * 
+     *
      * @param \T3Dev\Andprmembers\Domain\Model\Location $tgi
      * @return void
      */
@@ -195,7 +194,7 @@ class User extends \TYPO3\CMS\Extbase\Domain\Model\FrontendUser
 
     /**
      * Returns the appeal
-     * 
+     *
      * @return \T3Dev\Andprmembers\Domain\Model\Location appeal
      */
     public function getAppeal()
@@ -205,7 +204,7 @@ class User extends \TYPO3\CMS\Extbase\Domain\Model\FrontendUser
 
     /**
      * Sets the appeal
-     * 
+     *
      * @param \T3Dev\Andprmembers\Domain\Model\Location $appeal
      * @return void
      */

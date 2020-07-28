@@ -32,7 +32,6 @@ class AppealControllerTest extends \TYPO3\TestingFramework\Core\Unit\UnitTestCas
      */
     public function listActionFetchesAllAppealsFromRepositoryAndAssignsThemToView()
     {
-
         $allAppeals = $this->getMockBuilder(\TYPO3\CMS\Extbase\Persistence\ObjectStorage::class)
             ->disableOriginalConstructor()
             ->getMock();

@@ -9,7 +9,6 @@ use TYPO3\CMS\Fluid\View\StandaloneView;
 use TYPO3\CMS\Core\SingletonInterface;
 use TYPO3\CMS\Extbase\Configuration\BackendConfigurationManager;
 
-
 class MailUtility implements SingletonInterface
 {
 
@@ -23,10 +22,15 @@ class MailUtility implements SingletonInterface
      */
     protected $objectManager;
 
+    public function __construct()
+    {
+        $this->initializeObject();
+    }
+
     /**
      * Initialize the controller.
      */
-    protected function initialize()
+    protected function initializeObject()
     {
         $this->objectManager = ObjectUtility::getObjectManager()->get(ObjectManager::class);
         $this->configurationManager = ObjectUtility::getConfigurationManager(BackendConfigurationManager::class);
@@ -49,7 +53,6 @@ class MailUtility implements SingletonInterface
      */
     public function sendEmail($template, $receiver, $sender, $subject, $variables = array(), $fileName)
     {
-        $this->initialize();
 
         /** @var StandaloneView $view */
         $emailBodyObject = $this->objectManager->get(StandaloneView::class);
@@ -92,8 +95,6 @@ class MailUtility implements SingletonInterface
      */
     private function getTemplatePath($relativePathAndFilename)
     {
-        $this->initialize();
-
         $extbaseFrameworkConfiguration = $this->configurationManager->getConfiguration(
             ConfigurationManagerInterface::CONFIGURATION_TYPE_FRAMEWORK
         );
@@ -112,5 +113,4 @@ class MailUtility implements SingletonInterface
         }
         return $absolutePathAndFilename;
     }
-
 }

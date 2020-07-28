@@ -77,4 +77,3 @@ $fields = 'note, contribution, tgi, appeal';
     'fe_users',
     '--div--;LLL:EXT:andprmembers/Resources/Private/Language/locallang_db.xlf:tx_andprmembers.additional_fields, ' . $fields
 );
-

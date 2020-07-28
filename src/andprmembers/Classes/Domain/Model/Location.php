@@ -1,7 +1,6 @@
 <?php
 namespace T3Dev\Andprmembers\Domain\Model;
 
-
 /***
  *
  * This file is part of the "andprmembers" Extension for TYPO3 CMS.
@@ -20,7 +19,7 @@ class Location extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * name
-     * 
+     *
      * @var string
      * @TYPO3\CMS\Extbase\Annotation\Validate("NotEmpty")
      */
@@ -28,14 +27,14 @@ class Location extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * description
-     * 
+     *
      * @var string
      */
     protected $description = '';
 
     /**
      * Returns the name
-     * 
+     *
      * @return string $name
      */
     public function getName()
@@ -45,7 +44,7 @@ class Location extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the name
-     * 
+     *
      * @param string $name
      * @return void
      */
@@ -56,7 +55,7 @@ class Location extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the description
-     * 
+     *
      * @return string $description
      */
     public function getDescription()
@@ -66,7 +65,7 @@ class Location extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the description
-     * 
+     *
      * @param string $description
      * @return void
      */
