@@ -1,0 +1,25 @@
+<T3DataStructure>
+    <sheets>
+        <sDEF>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>Function</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el>
+                    <!-- Limit Start -->
+                    <settings.list.pagination.itemsPerPage>
+                        <TCEforms>
+                            <label>LLL:EXT:andprmembers/Resources/Private/Language/locallang_db.xlf:flexforms_additional.itemsPerPage</label>
+                            <config>
+                                <type>input</type>
+                                <size>2</size>
+                            </config>
+                        </TCEforms>
+                    </settings.list.pagination.itemsPerPage>
+
+                </el>
+            </ROOT>
+        </sDEF>
+    </sheets>
+</T3DataStructure>

@@ -24,47 +24,28 @@
 
     <f:if condition="{users}">
         <f:then>
-            <f:widget.paginate objects="{users}" as="paginatedUsers" configuration="{settings.list.pagination}">
-                <table  class="tx_andprmembers table" id="sort-table">
-                    <thead>
-                    <tr>
-                        <th><f:translate key="tx_andprmembers.number" /></th>
-                        <th><f:translate key="tx_andprmembers_domain_model_user.last_name" /></th>
-                        <th><f:translate key="tx_andprmembers_domain_model_user.first_name" /></th>
-                        <th><f:translate key="tx_andprmembers_domain_model_user.email" /></th>
-                        <th><f:translate key="tx_andprmembers.tgi" /></th>
-                        <th><f:translate key="tx_andprmembers.appeal" /></th>
-                        <th><f:translate key="tx_andprmembers_domain_model_user.note" /></th>
-                        <th><f:translate key="tx_andprmembers_domain_model_user.membership_fee" /></th>
-                        <f:comment>
-                            <th> </th>
-                            <th> </th>
-                        </f:comment>
-                    </tr>
-                    </thead>
-                    <f:for each="{paginatedUsers}" as="user">
-                        <tr>
-                            <td>ASDPR {user.uid}</td>
-                            <td>{user.firstName}</td>
-                            <td>{user.lastName}</td>
-                            <td>
-                                <f:if condition="{user.email}">
-                                    <f:link.email email="{user.email}"></f:link.email>
-                                </f:if>
-                            </td>
-                            <td>{user.tgi.name}</td>
-                            <td>{user.appeal.name}</td>
-                            <td>{user.note}</td>
-                            <td><f:translate key="tx_andprmembers.contribution.{user.contribution}" /></td>
-                            <f:comment>
-                                <td><f:link.action action="edit" arguments="{user : user}">Edit</f:link.action></td>
-                                <td><f:link.action action="delete" arguments="{user : user}">Delete</f:link.action></td>
-                            </f:comment>
-                        </tr>
-                    </f:for>
-                </table>
+            <f:if condition="{users->f:count()} > {settings.list.pagination.itemsPerPage}">
+                <f:then>
+                    <f:widget.paginate objects="{users}" as="paginatedUsers" configuration="{settings.list.pagination}">
+                        <table  class="tx_andprmembers table" id="sort-table">
+                            <f:render partial="User/Table/Thead" arguments="{_all}" />
+                            <f:for each="{paginatedUsers}" as="user">
+                                <f:render partial="User/Table/TableProperties" arguments="{_all}" />
+                            </f:for>
+                        </table>
+                    </f:widget.paginate>
+                </f:then>
+                <f:else>
+                    <table  class="tx_andprmembers table" id="sort-table">
+                        <f:render partial="User/Table/Thead" arguments="{_all}" />
+                        <f:for each="{users}" as="user">
+                            <f:render partial="User/Table/TableProperties" arguments="{_all}" />
+                        </f:for>
+                    </table>
+                </f:else>
+            </f:if>
 
-            </f:widget.paginate>
+
         </f:then>
         <f:else>
             There is no item records

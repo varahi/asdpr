@@ -54,6 +54,9 @@
 			<trans-unit id="tx_andprmembers.contribution_late" >
 				<source>Late</source>
 			</trans-unit>
+			<trans-unit id="flexforms_additional.itemsPerPage" >
+				<source>Items per page</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>

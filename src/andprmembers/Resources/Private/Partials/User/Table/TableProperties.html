@@ -1,0 +1,18 @@
+<tr>
+    <td>ASDPR {user.uid}</td>
+    <td>{user.firstName}</td>
+    <td>{user.lastName}</td>
+    <td>
+        <f:if condition="{user.email}">
+            <f:link.email email="{user.email}"></f:link.email>
+        </f:if>
+    </td>
+    <td>{user.tgi.name}</td>
+    <td>{user.appeal.name}</td>
+    <td>{user.note}</td>
+    <td><f:translate key="tx_andprmembers.contribution.{user.contribution}" /></td>
+    <f:comment>
+        <td><f:link.action action="edit" arguments="{user : user}">Edit</f:link.action></td>
+        <td><f:link.action action="delete" arguments="{user : user}">Delete</f:link.action></td>
+    </f:comment>
+</tr>
