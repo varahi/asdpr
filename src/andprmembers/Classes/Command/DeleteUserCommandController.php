@@ -55,21 +55,19 @@ class DeleteUserCommandController extends AbstractCommand
 
         if ($users) {
 
-            // Make instanse for send mail
-            $mailUtility = GeneralUtility::makeInstance(\T3Dev\Andprmembers\Utility\MailUtility::class);
-
             if ($currentDayMonth >= $deadlinePayDate) {
                 foreach ($users as $user) {
                     $this->userRepository->remove($user);
                 }
                 $this->persistenceManager->persistAll();
-
                 $mailTemplate = 'CommandController/MailToAdminDeleteUsers';
-                $mailUtility->sendEmail($mailTemplate, $receiver, $sender, $subject, $variables, $fileName);
             } else {
                 $mailTemplate = 'CommandController/MailToAdminNoUsersToDelete';
-                $mailUtility->sendEmail($mailTemplate, $receiver, $sender, $subject, $variables, $fileName);
             }
+
+            // Make instanse for send mail
+            $mailUtility = GeneralUtility::makeInstance(\T3Dev\Andprmembers\Utility\MailUtility::class);
+            $mailUtility->sendEmail($mailTemplate, $receiver, $sender, $subject, $variables, $fileName);
         }
 
         return 0; // everything fine
