@@ -1,0 +1,7 @@
+page {
+  # Css
+  includeCSS {
+    style_10 = EXT:andprmembers/Resources/Public/Css/style.css
+    style_10.media = all
+  }
+}

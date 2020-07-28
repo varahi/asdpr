@@ -29,7 +29,9 @@ class UserRepository extends \TYPO3\CMS\Extbase\Persistence\Repository
                 $query->like('email', '%'.$strFilter.'%'),
                 $query->like('username', '%'.$strFilter.'%'),
                 $query->like('note', '%'.$strFilter.'%'),
-                $query->like('uid', '%'.$strFilter.'%')
+                $query->like('uid', '%'.$strFilter.'%'),
+                $query->like('tgi.name', '%'.$strFilter.'%'),
+                $query->like('appeal.name', '%'.$strFilter.'%')
             )
         );
 

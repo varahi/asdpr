@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="messages" date="2020-07-23T16:03:20Z" product-name="andprmembers">
+	<file source-language="en" datatype="plaintext" original="messages" date="2020-07-28T07:04:57Z" product-name="andprmembers">
 		<header/>
 		<body>
 			<trans-unit id="tx_andprmembers_domain_model_user">
@@ -48,8 +48,17 @@
 			<trans-unit id="tx_andprmembers.ok">
 				<source>Ok</source>
 			</trans-unit>
+			<trans-unit id="tx_andprmembers.search">
+				<source>Search</source>
+			</trans-unit>
 			<trans-unit id="tx_andprmembers_domain_model_user.membership_fee">
 				<source>Membership fee</source>
+			</trans-unit>
+			<trans-unit id="tx_andprmembers.contribution.1">
+				<source>Up to date</source>
+			</trans-unit>
+			<trans-unit id="tx_andprmembers.contribution.2">
+				<source>Late</source>
 			</trans-unit>
 		</body>
 	</file>

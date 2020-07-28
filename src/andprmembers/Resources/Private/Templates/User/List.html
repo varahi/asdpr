@@ -5,17 +5,22 @@
 
     <f:flashMessages />
 
+    <div class="search-box">
+        <f:form
+            action="list"
+            controller="User"
+            name="certification"
+            object="{user}">
 
-    <f:form
-        action="list"
-        controller="User"
-        name="certification"
-        object="{user}">
-        <p>
-            <f:form.textfield name="searchText" size="20" />&nbsp;&nbsp;
-            <f:form.submit id="opener_search" value="{f:translate(id:'tx_andprmembers.ok')}" class="button-wta btn"/>
-        </p>
-    </f:form>
+            <div class="input-group mb-3">
+                <f:form.textfield name="searchText" class="search-box__input" placeholder="{f:translate(id:'tx_andprmembers.search')}" />
+                <div class="input-group-append">
+                    <f:form.submit value="{f:translate(id:'tx_andprmembers.ok')}" class="search-box__btn btn "/>
+                </div>
+            </div>
+
+        </f:form>
+    </div>
 
     <f:if condition="{users}">
         <f:then>
@@ -50,7 +55,7 @@
                             <td>{user.tgi.name}</td>
                             <td>{user.appeal.name}</td>
                             <td>{user.note}</td>
-                            <td>{user.contribution}</td>
+                            <td><f:translate key="tx_andprmembers.contribution.{user.contribution}" /></td>
                             <f:comment>
                                 <td><f:link.action action="edit" arguments="{user : user}">Edit</f:link.action></td>
                                 <td><f:link.action action="delete" arguments="{user : user}">Delete</f:link.action></td>
