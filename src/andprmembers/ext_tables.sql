@@ -10,6 +10,7 @@ CREATE TABLE fe_users (
 	contribution varchar(255) DEFAULT '' NOT NULL,
 	tgi int(11) unsigned DEFAULT '0',
 	appeal int(11) unsigned DEFAULT '0',
+	pay_date date DEFAULT NULL,
 
 	tx_extbase_type varchar(255) DEFAULT '' NOT NULL
 

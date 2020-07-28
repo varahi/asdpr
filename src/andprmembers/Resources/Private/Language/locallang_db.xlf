@@ -57,6 +57,10 @@
 			<trans-unit id="flexforms_additional.itemsPerPage" >
 				<source>Items per page</source>
 			</trans-unit>
+
+			<trans-unit id="tx_andprmembers.pay_date" >
+				<source>Pay date</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>

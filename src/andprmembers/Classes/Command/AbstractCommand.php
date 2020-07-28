@@ -51,6 +51,25 @@ abstract class AbstractCommand extends Command
      */
     protected function getConfiguration()
     {
+        $configuration = $GLOBALS['TYPO3_CONF_VARS']['EXTENSIONS']['andprmembers'];
+
+        // ToDo: set condition to select values
+        //if (is_string($configuration)) {
+        //    $configuration = unserialize($configuration);
+        //}
+
+        return $configuration;
+    }
+
+
+    /**
+     * Build config array (get from $GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf']['inkluviva_icd10'])
+     * if empty then set default values for configuration
+     *
+     * @return array Configuration
+     */
+    protected function _getConfiguration()
+    {
         if (empty($this->configuration)) {
             $configuration = $GLOBALS['TYPO3_CONF_VARS']['EXTENSIONS']['andprmembers'];
             if (is_string($configuration)) {
@@ -62,8 +81,8 @@ abstract class AbstractCommand extends Command
                     'userPid' => 0,
                     'receiver' => 'reciever@asdpr.dyndns.org',
                     'sender' => 'sender@asdpr.dyndns.org',
-                    'deadlinePayTimeOne' => '15/02',
-                    'deadlinePayTimeTwo' => '28/02'
+                    'deadlinePayTimeOne' => '15/02/2021',
+                    'deadlinePayTimeTwo' => '28/02/2021'
                 );
             }
             $this->configuration = $configuration;

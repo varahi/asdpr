@@ -28,11 +28,11 @@ class DeleteUserCommandController extends AbstractCommand
     public function execute(InputInterface $input, OutputInterface $output)
     {
         $this->initializeCommand();
-        $this->getConfiguration();
+        //$this->getConfiguration();
         $this->initTSFE();
+        $config = $this->getConfiguration();
 
         // Variables for email to admin
-        $mailTemplate = 'CommandController/MailToAdminDeleteUsers';
         $settings = $GLOBALS['TSFE']->tmpl->setup['plugin.']['tx_andprmembers.']['settings.'];
         $sender = $settings['infoEmailAddresses.']['senderEmailAddress'];
         $receiver = $settings['infoEmailAddresses.']['toEmailAddress'];
@@ -44,17 +44,34 @@ class DeleteUserCommandController extends AbstractCommand
         $users = $this->userRepository->findByContribution($contributionLateId);
         $variables = array('users' => $users);
 
-        // Make instanse for send mail
-        $mailUtility = GeneralUtility::makeInstance(\T3Dev\Andprmembers\Utility\MailUtility::class);
+        // Current date time object
+        $current = date('d/m/Y');
+        $datetime = new \DateTime();
+        $currentDayMonth = $datetime->createFromFormat('d/m/Y', $current);
+
+        // Date time object of the deadline / default value is 28/02
+        $deadlinePayTimeTwo = $config['deadlinePayTimeTwo'];
+        $deadlinePayDate = \DateTime::createFromFormat('d/m/Y', $deadlinePayTimeTwo);
 
         if ($users) {
-            foreach ($users as $user) {
-                $this->userRepository->remove($user);
+
+            // Make instanse for send mail
+            $mailUtility = GeneralUtility::makeInstance(\T3Dev\Andprmembers\Utility\MailUtility::class);
+
+            if ($currentDayMonth >= $deadlinePayDate) {
+                foreach ($users as $user) {
+                    $this->userRepository->remove($user);
+                }
+                $this->persistenceManager->persistAll();
+
+                $mailTemplate = 'CommandController/MailToAdminDeleteUsers';
+                $mailUtility->sendEmail($mailTemplate, $receiver, $sender, $subject, $variables, $fileName);
+            } else {
+                $mailTemplate = 'CommandController/MailToAdminNoUsersToDelete';
+                $mailUtility->sendEmail($mailTemplate, $receiver, $sender, $subject, $variables, $fileName);
             }
-            $this->persistenceManager->persistAll();
         }
-        
-        $mailUtility->sendEmail($mailTemplate, $receiver, $sender, $subject, $variables, $fileName);
+
         return 0; // everything fine
     }
 }

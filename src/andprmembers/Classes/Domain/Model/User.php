@@ -67,6 +67,14 @@ class User extends \TYPO3\CMS\Extbase\Domain\Model\FrontendUser
     protected $appeal = null;
 
     /**
+     * payDate
+     *
+     * @var \DateTime
+     */
+    protected $payDate = null;
+
+
+    /**
      * Returns the firstName
      *
      * @return string $firstName
@@ -211,5 +219,26 @@ class User extends \TYPO3\CMS\Extbase\Domain\Model\FrontendUser
     public function setAppeal(\T3Dev\Andprmembers\Domain\Model\Location $appeal)
     {
         $this->appeal = $appeal;
+    }
+
+    /**
+     * Returns the payDate
+     *
+     * @return \DateTime $payDate
+     */
+    public function getPayDate()
+    {
+        return $this->payDate;
+    }
+
+    /**
+     * Sets the payDate
+     *
+     * @param \DateTime $payDate
+     * @return void
+     */
+    public function setPayDate(\DateTime $payDate)
+    {
+        $this->payDate = $payDate;
     }
 }

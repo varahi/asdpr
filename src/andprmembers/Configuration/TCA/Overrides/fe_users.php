@@ -15,17 +15,6 @@ $tmp_andprmembers_columns = [
             'eval' => 'trim'
         ]
     ],
-    /*
-    'contribution' => [
-        'exclude' => true,
-        'label' => 'LLL:EXT:andprmembers/Resources/Private/Language/locallang_db.xlf:tx_andprmembers_domain_model_user.contribution',
-        'config' => [
-            'type' => 'input',
-            'size' => 30,
-            'eval' => 'trim'
-        ],
-    ],
-    */
 
     'contribution' => [
         'exclude' => true,
@@ -66,6 +55,19 @@ $tmp_andprmembers_columns = [
             'maxitems' => 1,
         ],
 
+    ],
+
+    'pay_date' => [
+        'exclude' => true,
+        'label' => $languageFile . 'tx_andprmembers.pay_date',
+        'config' => [
+            'dbType' => 'date',
+            'type' => 'input',
+            'renderType' => 'inputDateTime',
+            'size' => 7,
+            'eval' => 'date',
+            'default' => null,
+        ],
     ],
 
 ];
