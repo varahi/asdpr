@@ -8,5 +8,11 @@ plugin.tx_andprmembers {
         maximumNumberOfLinks = 10
       }
     }
+
+    infoEmailAddresses {
+      senderEmailAddress = reciever@asdpr.dyndns.org
+      toEmailAddress = sender@asdpr.dyndns.org
+    }
+
   }
 }

@@ -60,6 +60,9 @@
 			<trans-unit id="tx_andprmembers.contribution.2">
 				<source>Late</source>
 			</trans-unit>
+			<trans-unit id="tx_andprmembers.subject_send_info_email">
+				<source>Email from site ASPDR</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>

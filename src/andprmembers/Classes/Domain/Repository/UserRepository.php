@@ -1,7 +1,7 @@
 <?php
 namespace T3Dev\Andprmembers\Domain\Repository;
 
-
+use TYPO3\CMS\Extbase\Persistence\Generic\Typo3QuerySettings;
 /***
  *
  * This file is part of the "andprmembers" Extension for TYPO3 CMS.
@@ -17,6 +17,20 @@ namespace T3Dev\Andprmembers\Domain\Repository;
  */
 class UserRepository extends \TYPO3\CMS\Extbase\Persistence\Repository
 {
+
+    /**
+     * Initializes the repository.
+     *
+     * @return void
+     * @see \TYPO3\CMS\Extbase\Persistence\Repository::initializeObject()
+     */
+    public function initializeObject()
+    {
+        /** @var $querySettings Typo3QuerySettings */
+        $querySettings = $this->objectManager->get('TYPO3\CMS\Extbase\Persistence\Generic\Typo3QuerySettings');
+        $querySettings->setRespectStoragePage(false);
+        $this->setDefaultQuerySettings($querySettings);
+    }
 
     public function findByFields($strFilter = '', $boolOrderingASC = true)
     {

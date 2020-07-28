@@ -1,0 +1,10 @@
+# cat=basic/enable; type=boolean; label=Enable devLog:Debugging-only! Will write to typo3temp directory
+enableDevLog = 1
+
+# cat=email/enable; type=string; label=Reciever
+reciever = reciever@asdpr.dyndns.org
+
+# cat=email/enable; type=string; label=Sender
+sender = sender@asdpr.dyndns.org
+
+
