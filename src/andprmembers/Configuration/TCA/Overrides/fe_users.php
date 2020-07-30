@@ -7,7 +7,7 @@ $tmp_andprmembers_columns = [
 
     'note' => [
         'exclude' => true,
-        'label' => 'LLL:EXT:andprmembers/Resources/Private/Language/locallang_db.xlf:tx_andprmembers_domain_model_user.note',
+        'label' => $languageFile . 'tx_andprmembers_domain_model_user.note',
         'config' => [
             'type' => 'text',
             'cols' => 40,
@@ -18,7 +18,7 @@ $tmp_andprmembers_columns = [
 
     'contribution' => [
         'exclude' => true,
-        'label' => 'LLL:EXT:andprmembers/Resources/Private/Language/locallang_db.xlf:tx_andprmembers_domain_model_user.contribution',
+        'label' => $languageFile . 'tx_andprmembers_domain_model_user.contribution',
         'config' => [
             //'type' => 'radio',
             'type' => 'select',
@@ -32,7 +32,7 @@ $tmp_andprmembers_columns = [
 
     'tgi' => [
         'exclude' => true,
-        'label' => 'LLL:EXT:andprmembers/Resources/Private/Language/locallang_db.xlf:tx_andprmembers_domain_model_user.tgi',
+        'label' => $languageFile .'tx_andprmembers_domain_model_user.tgi',
         'config' => [
             'type' => 'select',
             'renderType' => 'selectSingle',
@@ -45,7 +45,7 @@ $tmp_andprmembers_columns = [
     ],
     'appeal' => [
         'exclude' => true,
-        'label' => 'LLL:EXT:andprmembers/Resources/Private/Language/locallang_db.xlf:tx_andprmembers_domain_model_user.appeal',
+        'label' => $languageFile . 'tx_andprmembers_domain_model_user.appeal',
         'config' => [
             'type' => 'select',
             'renderType' => 'selectSingle',
@@ -70,9 +70,23 @@ $tmp_andprmembers_columns = [
         ],
     ],
 
+    'member_type' => [
+        'exclude' => true,
+        'label' => $languageFile . 'tx_andprmembers_domain_model_user.member_type',
+        'config' => [
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'items' => [
+                [$languageFile . 'tx_andprmembers_domain_model_user.member_type.1', '1'],
+                [$languageFile . 'tx_andprmembers_domain_model_user.member_type.2', '2'],
+                [$languageFile . 'tx_andprmembers_domain_model_user.member_type.3', '3']
+            ],
+        ]
+    ],
+
 ];
 
-$fields = 'note, contribution, tgi, appeal';
+$fields = 'note, contribution, member_type, tgi, appeal';
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('fe_users', $tmp_andprmembers_columns);
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(

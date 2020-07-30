@@ -49,7 +49,7 @@ class DeleteUserCommandController extends AbstractCommand
         $datetime = new \DateTime();
         $currentDayMonth = $datetime->createFromFormat('d/m/Y', $current);
 
-        // Date time object of the deadline / default value is 28/02
+        // Date time object of the deadline / default value is 28/02/2021
         $deadlinePayTimeTwo = $config['deadlinePayTimeTwo'];
         $deadlinePayDate = \DateTime::createFromFormat('d/m/Y', $deadlinePayTimeTwo);
 

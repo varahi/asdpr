@@ -30,8 +30,8 @@ class SendEmailCommandController extends AbstractCommand
     public function execute(InputInterface $input, OutputInterface $output)
     {
         $this->initializeCommand();
-        $this->getConfiguration();
         $this->initTSFE();
+        $config = $this->getConfiguration();
 
         $mailTemplate = 'CommandController/MailToUserNotification';
         $settings = $GLOBALS['TSFE']->tmpl->setup['plugin.']['tx_andprmembers.']['settings.'];
@@ -43,15 +43,27 @@ class SendEmailCommandController extends AbstractCommand
         $users = $this->userRepository->findByContribution($contributionLateId);
         $mailUtility = GeneralUtility::makeInstance(\T3Dev\Andprmembers\Utility\MailUtility::class);
 
+        // Current date time object
+        $current = date('d/m/Y');
+        $datetime = new \DateTime();
+        $currentDayMonth = $datetime->createFromFormat('d/m/Y', $current);
+
+        // Date time object of the deadline / default value is 15/02/2021
+        $deadlinePayTimeOne = $config['deadlinePayTimeOne'];
+        $deadlinePayTimeTwo = $config['deadlinePayTimeTwo'];
+        $deadlinePayDate = \DateTime::createFromFormat('d/m/Y', $deadlinePayTimeOne);
+
         if ($users) {
-            foreach ($users as $user) {
-                if ($user->getEmail()) {
-                    $receiver = $user->getEmail();
-                } else {
-                    $receiver = $settings['infoEmailAddresses.']['toEmailAddress'];
+            if ($currentDayMonth <= $deadlinePayDate) {
+                foreach ($users as $user) {
+                    if ($user->getEmail()) {
+                        $receiver = $user->getEmail();
+                    } else {
+                        $receiver = $settings['infoEmailAddresses.']['toEmailAddress'];
+                    }
+                    $variables = array('firstName' => $user->getFirstName(), 'lastName' => $user->getLastName(), 'deadlinePayTimeTwo' => $deadlinePayTimeTwo);
+                    $mailUtility->sendEmail($mailTemplate, $receiver, $sender, $subject, $variables, $fileName);
                 }
-                $variables = array('firstName' => $user->getFirstName(), 'lastName' => $user->getLastName());
-                $mailUtility->sendEmail($mailTemplate, $receiver, $sender, $subject, $variables, $fileName);
             }
         }
 

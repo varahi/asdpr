@@ -11,6 +11,7 @@ CREATE TABLE fe_users (
 	tgi int(11) unsigned DEFAULT '0',
 	appeal int(11) unsigned DEFAULT '0',
 	pay_date date DEFAULT NULL,
+	member_type varchar(255) DEFAULT '' NOT NULL,
 
 	tx_extbase_type varchar(255) DEFAULT '' NOT NULL
 
